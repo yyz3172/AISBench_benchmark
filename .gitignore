@@ -6,3 +6,7 @@ test_reports
 .venv
 .eggs
 ais_bench_benchmark.egg-info
+ais_bench/datasets/
+tmp/
+log
+outputs/
