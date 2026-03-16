@@ -1,0 +1,230 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+<frozen importlib._bootstrap>:241: UserWarning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde08dc7b8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1dd0 (0xfffde9fad870 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #6: PyInit__C + 0xc (0xfffdf25f0160 in /usr/local/python3.10/lib/python3.10/site-packages/torch/_C.cpython-310-aarch64-linux-gnu.so)
+<omitting python frames>
+ (Triggered internally at /pytorch/aten/src/ATen/ParallelCommon.cpp:44.)
+<frozen importlib._bootstrap>:241: UserWarning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde08dc7c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1dd0 (0xfffde9fad870 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #6: PyInit__C + 0xc (0xfffdf25f0160 in /usr/local/python3.10/lib/python3.10/site-packages/torch/_C.cpython-310-aarch64-linux-gnu.so)
+<omitting python frames>
+ (Triggered internally at /pytorch/aten/src/ATen/ParallelCommon.cpp:44.)
+[W314 19:05:43.334056685 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde08dc7b8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1f8 (0xfffcd93723c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch_npu/_C.cpython-310-aarch64-linux-gnu.so)
+<omitting python frames>
+ (function get_env_num_threads)
+[W314 19:05:43.336461180 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde08dc7c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1f8 (0xfffcd93723c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch_npu/_C.cpython-310-aarch64-linux-gnu.so)
+<omitting python frames>
+ (function get_env_num_threads)
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+[2026-03-14 19:05:50,609] [ais_bench] [[32mINFO[0m] Loading vllm_api_stream_chat_multiturn: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./models/vllm_api/vllm_api_stream_chat_multiturn.py
+[2026-03-14 19:05:50,617] [ais_bench] [[32mINFO[0m] Loading sharegpt_gen: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./datasets/sharegpt/sharegpt_gen.py
+[2026-03-14 19:05:50,620] [ais_bench] [[32mINFO[0m] Loading example: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./summarizers/example.py
+[2026-03-14 19:05:50,678] [ais_bench] [[32mINFO[0m] Current exp folder: outputs/default/20260314_190536
+[2026-03-14 19:05:50,692] [ais_bench] [[32mINFO[0m] Starting inference tasks...
+[2026-03-14 19:05:50,694] [ais_bench] [[32mINFO[0m] Partitioned into 1 tasks.
+[2026-03-14 19:05:50,694] [ais_bench] [[32mINFO[0m] Merging datasets with the same model and inferencer...
+[W314 19:05:50.165994185 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde08dc7b8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #49: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #51: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+[W314 19:05:50.168793509 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde08dc7c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #49: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #51: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?25l[24;1H[?12l[?25h[?1049l[23;0;0t[?1l>[2026-03-14 19:05:50,740] [ais_bench] [[33mWARNING[0m] Can't set cursor because of endwin() returned ERR, running in background mode
+[2026-03-14 19:05:50,740] [ais_bench] [[32mINFO[0m] Launch TasksMonitor, PID: 23456, Refresh interval: 0.5, Run in background: True
+Monitoring tasks progress:   0%|          | 0/1 [00:00<?, ?it/s][2026-03-14 19:05:50,742] [ais_bench] [[33mWARNING[0m] Failed to read status file 'outputs/default/20260314_190536/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json': [Errno 2] No such file or directory: 'outputs/default/20260314_190536/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json'. Attempting to clear and continuing.
+Monitoring tasks progress: 100%|██████████| 1/1 [1:55:30<00:00, 6930.95s/it]Monitoring tasks progress: 100%|██████████| 1/1 [1:55:30<00:00, 6930.95s/it]
+[2026-03-14 21:01:24,646] [ais_bench] [[32mINFO[0m] Inference tasks completed.
+[2026-03-14 21:01:24,649] [ais_bench] [[32mINFO[0m] Summarizing performance results...
+[W314 21:01:25.085382998 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde08dc7b8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #48: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #49: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+[W314 21:01:25.088149442 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde08dc7c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #48: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #49: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+[W314 21:01:25.135102391 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde08dc7b8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #45: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #46: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #47: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+[W314 21:01:25.137766175 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde08dc7c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #45: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #46: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #47: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+[W314 21:01:25.172518200 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde08dc7b8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #45: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #46: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #47: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+[W314 21:01:25.175203975 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffddf8e48c0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffddf88c1f0 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde08dc72c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde08dc7c8 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde08ddc14 in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde08ddc5c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffde9f8952c in /usr/local/python3.10/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+<omitting python frames>
+frame #45: <unknown function> + 0x273fc (0xffff840d73fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #46: __libc_start_main + 0x98 (0xffff840d74cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #47: _start + 0x30 (0xaaaae02f08b0 in /usr/local/python3.10/bin/python3.10)
+ (function get_env_num_threads)
+Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/3514 [00:00<?, ?it/s]Calculating performance details:   2%|▏         | 59/3514 [00:01<00:58, 58.60it/s]Calculating performance details:  11%|█         | 391/3514 [00:01<00:08, 353.11it/s]Calculating performance details:  20%|█▉        | 696/3514 [00:01<00:04, 576.28it/s]Calculating performance details:  29%|██▉       | 1028/3514 [00:01<00:03, 785.81it/s]Calculating performance details:  38%|███▊      | 1334/3514 [00:01<00:02, 947.00it/s]Calculating performance details:  47%|████▋     | 1647/3514 [00:01<00:01, 1091.38it/s]Calculating performance details:  55%|█████▌    | 1946/3514 [00:01<00:01, 1208.98it/s]Calculating performance details:  64%|██████▍   | 2264/3514 [00:01<00:00, 1323.81it/s]Calculating performance details:  73%|███████▎  | 2567/3514 [00:01<00:00, 1417.61it/s]Calculating performance details:  81%|████████  | 2850/3514 [00:01<00:00, 1491.09it/s]Calculating performance details:  90%|████████▉ | 3148/3514 [00:02<00:00, 1564.77it/s]Calculating performance details:  98%|█████████▊| 3449/3514 [00:02<00:00, 1632.88it/s]Calculating performance details: 100%|██████████| 3514/3514 [00:02<00:00, 1588.09it/s]Calculating performance details: 100%|██████████| 3514/3514 [00:02<00:00, 1519.18it/s]Calculating performance details: 100%|██████████| 3514/3514 [00:02<00:00, 1518.93it/s]
+[2026-03-14 21:01:28,987] [ais_bench] [[32mINFO[0m] Visualization in multi-turn conversations...
+[2026-03-14 21:01:29,492] [ais_bench] [[32mINFO[0m] Request timeline and concurrency chart saved to outputs/default/20260314_190536/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
+[2026-03-14 21:01:29,492] [ais_bench] [[32mINFO[0m] The sharegpt_plot has been saved in outputs/default/20260314_190536/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
+[2026-03-14 21:01:29,501] [ais_bench] [[32mINFO[0m] Converting performance results for stage...
+[2026-03-14 21:01:29,509] [ais_bench] [[32mINFO[0m] Performance results conversion completed!
+[2026-03-14 21:01:29,509] [ais_bench] [[32mINFO[0m] Starting metrics calculation...
+[2026-03-14 21:01:29,653] [ais_bench] [[32mINFO[0m] Starting common metrics calculation...
+[2026-03-14 21:01:29,653] [ais_bench] [[33mWARNING[0m] Some requests failed, please check the error logs from responses!
+[2026-03-14 21:01:29,655] [ais_bench] [[32mINFO[0m] Adding units to metrics...
+[2026-03-14 21:01:29,655] [ais_bench] [[32mINFO[0m] Performance data calculation completed!
+[2026-03-14 21:01:29,656] [ais_bench] [[32mINFO[0m] Performance Results of task [vllm-multiturn-api-chat-stream/sharegpt]: 
+╒══════════════════════════╤═════════╤════════════════╤═══════════════╤════════════════╤═════════════╤════════════════╤════════════════╤════════════════╤══════╕
+│ Performance Parameters   │ Stage   │ Average        │ Min           │ Max            │ Median      │ P75            │ P90            │ P99            │  N   │
+╞══════════════════════════╪═════════╪════════════════╪═══════════════╪════════════════╪═════════════╪════════════════╪════════════════╪════════════════╪══════╡
+│ E2EL                     │ total   │ 60851.7 ms     │ 10583.8 ms    │ 70044.4 ms     │ 64639.2 ms  │ 65023.4 ms     │ 65439.1 ms     │ 66615.9 ms     │ 3443 │
+├──────────────────────────┼─────────┼────────────────┼───────────────┼────────────────┼─────────────┼────────────────┼────────────────┼────────────────┼──────┤
+│ TTFT                     │ total   │ 663.3 ms       │ 335.7 ms      │ 6229.5 ms      │ 625.7 ms    │ 753.6 ms       │ 771.0 ms       │ 1399.4 ms      │ 3443 │
+├──────────────────────────┼─────────┼────────────────┼───────────────┼────────────────┼─────────────┼────────────────┼────────────────┼────────────────┼──────┤
+│ TPOT                     │ total   │ 125.6 ms       │ 111.4 ms      │ 132.8 ms       │ 125.5 ms    │ 126.1 ms       │ 127.0 ms       │ 129.1 ms       │ 3443 │
+├──────────────────────────┼─────────┼────────────────┼───────────────┼────────────────┼─────────────┼────────────────┼────────────────┼────────────────┼──────┤
+│ ITL                      │ total   │ 125.1 ms       │ 0.0 ms        │ 503.7 ms       │ 124.8 ms    │ 127.3 ms       │ 130.3 ms       │ 138.5 ms       │ 3443 │
+├──────────────────────────┼─────────┼────────────────┼───────────────┼────────────────┼─────────────┼────────────────┼────────────────┼────────────────┼──────┤
+│ InputTokens              │ total   │ 2401.2817      │ 9.0           │ 7671.0         │ 2130.0      │ 3517.0         │ 4978.4         │ 7157.64        │ 3443 │
+├──────────────────────────┼─────────┼────────────────┼───────────────┼────────────────┼─────────────┼────────────────┼────────────────┼────────────────┼──────┤
+│ OutputTokens             │ total   │ 480.2846       │ 82.0          │ 512.0          │ 512.0       │ 512.0          │ 512.0          │ 512.0          │ 3443 │
+├──────────────────────────┼─────────┼────────────────┼───────────────┼────────────────┼─────────────┼────────────────┼────────────────┼────────────────┼──────┤
+│ OutputTokenThroughput    │ total   │ 7.8917 token/s │ 7.013 token/s │ 8.9376 token/s │ 7.9 token/s │ 7.9355 token/s │ 7.9712 token/s │ 8.0895 token/s │ 3443 │
+╘══════════════════════════╧═════════╧════════════════╧═══════════════╧════════════════╧═════════════╧════════════════╧════════════════╧════════════════╧══════╛
+[2026-03-14 21:01:29,666] [ais_bench] [[32mINFO[0m] Performance Result files located in outputs/default/20260314_190536/performances/vllm-multiturn-api-chat-stream.
+╒══════════════════════════╤═════════╤═══════════════════╕
+│ Common Metric            │ Stage   │ Value             │
+╞══════════════════════════╪═════════╪═══════════════════╡
+│ Benchmark Duration       │ total   │ 6072431.3507 ms   │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Total Requests           │ total   │ 3514              │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Failed Requests          │ total   │ 71                │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Success Requests         │ total   │ 3443              │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Concurrency              │ total   │ 34.5023           │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Max Concurrency          │ total   │ 40                │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Request Throughput       │ total   │ 0.567 req/s       │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Total Input Tokens       │ total   │ 8267613           │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Prefill Token Throughput │ total   │ 3620.237 token/s  │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Total Generated Tokens   │ total   │ 1653620           │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Input Token Throughput   │ total   │ 1361.4996 token/s │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Output Token Throughput  │ total   │ 272.316 token/s   │
+├──────────────────────────┼─────────┼───────────────────┤
+│ Total Token Throughput   │ total   │ 1633.8156 token/s │
+╘══════════════════════════╧═════════╧═══════════════════╛
