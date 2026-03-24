@@ -1,0 +1,759 @@
+<frozen importlib._bootstrap>:241: UserWarning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffb13648c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffb130c1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffb235c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffb235c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffb235dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1dd0 (0xffffbba2d7d0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #6: PyInit__C + 0xc (0xffffbc5b0160 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/_C.cpython-311-aarch64-linux-gnu.so)
+frame #7: <unknown function> + 0x4b8840 (0xaaaadc898840 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #8: <unknown function> + 0x34ea20 (0xaaaadc72ea20 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #9: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #10: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #11: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #12: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #13: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #14: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #15: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaadc787f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #16: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #17: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #18: <unknown function> + 0x49d730 (0xaaaadc87d730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #19: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #20: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #21: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #22: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #23: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #24: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #25: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #26: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaadc787f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #27: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #28: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #29: <unknown function> + 0x49d730 (0xaaaadc87d730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #30: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #31: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #32: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #33: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #34: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #35: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #36: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #37: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaadc787f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #38: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #39: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #40: <unknown function> + 0x49d730 (0xaaaadc87d730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #41: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #42: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #43: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #44: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #45: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #46: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #47: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #48: <unknown function> + 0x383a78 (0xaaaadc763a78 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #49: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #50: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #51: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #52: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #53: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #54: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #55: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #56: <unknown function> + 0x383a78 (0xaaaadc763a78 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #57: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #58: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #59: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #60: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #61: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #62: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+ (Triggered internally at /pytorch/aten/src/ATen/ParallelCommon.cpp:44.)
+[W323 20:44:15.826229912 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffb13648c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffb130c1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffb235c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffb235c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffb235dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1f8 (0xffff6ff223d8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch_npu/_C.cpython-311-aarch64-linux-gnu.so)
+frame #6: <unknown function> + 0x4b8840 (0xaaaadc898840 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #7: <unknown function> + 0x34ea20 (0xaaaadc72ea20 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #8: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #9: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #10: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #11: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #12: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #13: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #14: <unknown function> + 0x383a78 (0xaaaadc763a78 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #15: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #16: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #17: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #18: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #19: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #20: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #21: PyImport_ImportModuleLevelObject + 0x3dc (0xaaaadc7b16b4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #22: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaadc787f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #23: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #24: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #25: <unknown function> + 0x49d730 (0xaaaadc87d730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #26: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #27: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #28: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #29: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #30: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #31: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #32: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #33: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaadc787f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #34: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #35: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #36: <unknown function> + 0x49d730 (0xaaaadc87d730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #37: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #38: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #39: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #40: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #41: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #42: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #43: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #44: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaadc787f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #45: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #46: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #47: <unknown function> + 0x49d730 (0xaaaadc87d730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #48: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #49: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #50: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #51: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #52: <unknown function> + 0x49d730 (0xaaaadc87d730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #53: <unknown function> + 0x34eb18 (0xaaaadc72eb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #54: _PyEval_EvalFrameDefault + 0x328cc (0xaaaadc7986ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #55: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #56: <unknown function> + 0x32bb40 (0xaaaadc70bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #57: <unknown function> + 0x32eb08 (0xaaaadc70eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #58: PyObject_CallMethodObjArgs + 0xa0 (0xaaaadc813810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #59: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaadc7b1ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #60: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaadc787f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #61: <unknown function> + 0x49f97c (0xaaaadc87f97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #62: PyEval_EvalCode + 0xe0 (0xaaaadc87f72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+ (function get_env_num_threads)
+INFO 03-23 20:44:18 [__init__.py:43] Available plugins for group vllm.platform_plugins:
+INFO 03-23 20:44:18 [__init__.py:45] - ascend -> vllm_ascend:register
+INFO 03-23 20:44:18 [__init__.py:48] All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+INFO 03-23 20:44:18 [__init__.py:217] Platform plugin ascend is activated
+ERROR 03-23 20:44:22 [config.py:32] Failed to import Triton kernels. Please make sure your triton version is compatible. Error: No module named 'triton.language.target_info'
+ERROR 03-23 20:44:22 [gpt_oss_triton_kernels_moe.py:30] Failed to import Triton kernels. Please make sure your triton version is compatible. Error: No module named 'triton.language.target_info'
+INFO 03-23 20:44:25 [__init__.py:108] Registered model loader `<class 'vllm_ascend.model_loader.netloader.netloader.ModelNetLoaderElastic'>` with load format `netloader`
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:25 [api_server.py:1351] vLLM API server version 0.13.0
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:25 [utils.py:253] non-default args: {'model_tag': '/root/autodl-tmp/models/Qwen3-32B', 'host': '0.0.0.0', 'port': 9000, 'enable_auto_tool_choice': True, 'tool_call_parser': 'hermes', 'model': '/root/autodl-tmp/models/Qwen3-32B', 'trust_remote_code': True, 'dtype': 'bfloat16', 'seed': 1024, 'max_model_len': 32768, 'enforce_eager': True, 'served_model_name': ['qwen3_32b'], 'tensor_parallel_size': 2, 'max_num_batched_tokens': 32768, 'max_num_seqs': 256, 'long_prefill_token_threshold': 1024, 'kv_transfer_config': KVTransferConfig(kv_connector='MooncakeConnectorV1', engine_id='0', kv_buffer_device='npu', kv_buffer_size=1000000000.0, kv_role='kv_producer', kv_rank=None, kv_parallel_size=1, kv_ip='127.0.0.1', kv_port=20001, kv_connector_extra_config={'prefill': {'dp_size': 1, 'tp_size': 2}, 'decode': {'dp_size': 2, 'tp_size': 2}}, kv_connector_module_path='vllm_ascend.distributed.mooncake_connector', enable_permute_local_kv=False, kv_load_failure_policy='recompute')}
+[0;36m(APIServer pid=314284)[0;0m The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:25 [model.py:514] Resolved architecture: Qwen3ForCausalLM
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:25 [model.py:1661] Using max model len 32768
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:26 [scheduler.py:230] Chunked prefill is enabled with max_num_batched_tokens=32768.
+[0;36m(APIServer pid=314284)[0;0m WARNING 03-23 20:44:26 [vllm.py:622] Enforce eager set, overriding optimization level to -O0
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:26 [vllm.py:722] Cudagraph is disabled under eager mode
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:26 [ascend_config.py:55] Linear layer sharding enabled with config: None. Note: This feature works optimally with FLASHCOMM2 and DSA-CP enabled; using it without these features may result in significant performance degradation.
+[0;36m(APIServer pid=314284)[0;0m INFO 03-23 20:44:26 [platform.py:202] Compilation disabled, using eager mode by default
+[0;36m(APIServer pid=314284)[0;0m WARNING 03-23 20:44:26 [vllm.py:932] Turning off hybrid kv cache manager because `--kv-transfer-config` is set. This will reduce the performance of vLLM on LLMs with sliding window attention or Mamba attention. If you are a developer of kv connector, please consider supporting hybrid kv cache manager for your connector by making sure your connector is a subclass of `SupportsHMA` defined in kv_connector/v1/base.py and use --no-disable-hybrid-kv-cache-manager to start vLLM.
+[W323 20:44:26.134003569 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffb13648c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffb130c1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffb235c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffb235c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffb235dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xffffb235dc5c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d92dc (0xffffbba092dc in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x34ebd0 (0xaaaadc72ebd0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #8: <unknown function> + 0x54994c (0xaaaadc92994c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #9: <unknown function> + 0x2e5ba4 (0xaaaadc6c5ba4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #10: <unknown function> + 0x2efa3c (0xaaaadc6cfa3c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #11: <unknown function> + 0x34ebd0 (0xaaaadc72ebd0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #12: _PyEval_EvalFrameDefault + 0x2e2c4 (0xaaaadc7940a4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #13: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #14: <unknown function> + 0x35cd04 (0xaaaadc73cd04 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #15: <unknown function> + 0x35fbf4 (0xaaaadc73fbf4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #16: _PyEval_EvalFrameDefault + 0x2e650 (0xaaaadc794430 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #17: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #18: <unknown function> + 0x35cdbc (0xaaaadc73cdbc in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #19: <unknown function> + 0x35fbf4 (0xaaaadc73fbf4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #20: _PyEval_EvalFrameDefault + 0x2e650 (0xaaaadc794430 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #21: <unknown function> + 0x333c10 (0xaaaadc713c10 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #22: <unknown function> + 0x385a6c (0xaaaadc765a6c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #23: _PyEval_EvalFrameDefault + 0x313c0 (0xaaaadc7971a0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #24: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #25: <unknown function> + 0x32f024 (0xaaaadc70f024 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #26: _PyEval_EvalFrameDefault + 0x2c270 (0xaaaadc792050 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #27: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #28: <unknown function> + 0x35cd04 (0xaaaadc73cd04 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #29: <unknown function> + 0x35fbf4 (0xaaaadc73fbf4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #30: _PyEval_EvalFrameDefault + 0x32600 (0xaaaadc7983e0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #31: _PyFunction_Vectorcall + 0x1e0 (0xaaaadc70c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #32: <unknown function> + 0x35cdbc (0xaaaadc73cdbc in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #33: <unknown function> + 0x35fbf4 (0xaaaadc73fbf4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #34: _PyEval_EvalFrameDefault + 0x2e650 (0xaaaadc794430 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #35: <unknown function> + 0x43d27c (0xaaaadc81d27c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #36: <unknown function> + 0x43d74c (0xaaaadc81d74c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #37: <unknown function> + 0x2068a0 (0xaaaadc5e68a0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #38: _PyEval_EvalFrameDefault + 0xba84 (0xaaaadc771864 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #39: <unknown function> + 0x43d27c (0xaaaadc81d27c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #40: _PyEval_EvalFrameDefault + 0xbaf4 (0xaaaadc7718d4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #41: <unknown function> + 0x43d27c (0xaaaadc81d27c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #42: <unknown function> + 0x43d74c (0xaaaadc81d74c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #43: <unknown function> + 0x2068a0 (0xaaaadc5e68a0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #44: _PyEval_EvalFrameDefault + 0xba84 (0xaaaadc771864 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #45: <unknown function> + 0x43d27c (0xaaaadc81d27c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #46: _PyEval_EvalFrameDefault + 0xbaf4 (0xaaaadc7718d4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #47: <unknown function> + 0x43d27c (0xaaaadc81d27c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #48: _PyEval_EvalFrameDefault + 0xbaf4 (0xaaaadc7718d4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #49: <unknown function> + 0x43d27c (0xaaaadc81d27c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #50: _PyEval_EvalFrameDefault + 0xbaf4 (0xaaaadc7718d4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #51: <unknown function> + 0x43d27c (0xaaaadc81d27c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #52: <unknown function> + 0x26b554 (0xaaaadc64b554 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #53: <unknown function> + 0x26b310 (0xaaaadc64b310 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #54: <unknown function> + 0x6071c (0xfffe9e62071c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #55: <unknown function> + 0x110888 (0xfffe9e6d0888 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #56: <unknown function> + 0x113308 (0xfffe9e6d3308 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #57: <unknown function> + 0x10f694 (0xfffe9e6cf694 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #58: <unknown function> + 0x110998 (0xfffe9e6d0998 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #59: uv__run_idle + 0x90 (0xfffe9e6e57d0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #60: uv_run + 0xa4 (0xfffe9e6e2a8c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #61: <unknown function> + 0x866dc (0xfffe9e6466dc in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+frame #62: <unknown function> + 0xc7cf0 (0xfffe9e687cf0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/loop.cpython-311-aarch64-linux-gnu.so)
+ (function get_env_num_threads)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:44:26 [core.py:93] Initializing a V1 LLM engine (v0.13.0) with config: model='/root/autodl-tmp/models/Qwen3-32B', speculative_config=None, tokenizer='/root/autodl-tmp/models/Qwen3-32B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=True, quantization=None, enforce_eager=True, kv_cache_dtype=auto, device_config=npu, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False), seed=1024, served_model_name=qwen3_32b, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'vllm_ascend.compilation.compiler_interface.AscendCompiler', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_split_points': [32768], 'inductor_compile_config': {'enable_auto_functionalized_v2': False}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'eliminate_noops': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False}, 'local_cache_dir': None}
+[W323 20:44:29.976897278 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffb13648c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffb130c1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffb235c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffb235c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffb235dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: torch::autograd::Engine::thread_init(int, std::shared_ptr<torch::autograd::ReadyQueue> const&, bool) + 0x234 (0xffffb641cca4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x9aa4b4 (0xffffbbada4b4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0xd31fc (0xffffbeca31fc in /usr/lib/aarch64-linux-gnu/libstdc++.so.6)
+frame #8: <unknown function> + 0x7d5b8 (0xffffbe97d5b8 in /usr/lib/aarch64-linux-gnu/libc.so.6)
+frame #9: <unknown function> + 0xe5edc (0xffffbe9e5edc in /usr/lib/aarch64-linux-gnu/libc.so.6)
+ (function get_env_num_threads)
+[W323 20:44:29.978931318 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffb13648c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffb130c1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffb235c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffb235c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffb235dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: torch::autograd::Engine::thread_init(int, std::shared_ptr<torch::autograd::ReadyQueue> const&, bool) + 0x234 (0xffffb641cca4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x9aa4b4 (0xffffbbada4b4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0xd31fc (0xffffbeca31fc in /usr/lib/aarch64-linux-gnu/libstdc++.so.6)
+frame #8: <unknown function> + 0x7d5b8 (0xffffbe97d5b8 in /usr/lib/aarch64-linux-gnu/libc.so.6)
+frame #9: <unknown function> + 0xe5edc (0xffffbe9e5edc in /usr/lib/aarch64-linux-gnu/libc.so.6)
+ (function get_env_num_threads)
+[W323 20:44:29.096308038 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffb13648c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffb130c1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffb235c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffb235c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffb235dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: torch::autograd::Engine::thread_init(int, std::shared_ptr<torch::autograd::ReadyQueue> const&, bool) + 0x234 (0xffffb641cca4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x9aa4b4 (0xffffbbada4b4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0xd31fc (0xffffbeca31fc in /usr/lib/aarch64-linux-gnu/libstdc++.so.6)
+frame #8: <unknown function> + 0x7d5b8 (0xffffbe97d5b8 in /usr/lib/aarch64-linux-gnu/libc.so.6)
+frame #9: <unknown function> + 0xe5edc (0xffffbe9e5edc in /usr/lib/aarch64-linux-gnu/libc.so.6)
+ (function get_env_num_threads)
+[W323 20:44:29.098337648 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffb13648c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffb130c1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffb235c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffb235c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffb235dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: torch::autograd::Engine::thread_init(int, std::shared_ptr<torch::autograd::ReadyQueue> const&, bool) + 0x234 (0xffffb641cca4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x9aa4b4 (0xffffbbada4b4 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0xd31fc (0xffffbeca31fc in /usr/lib/aarch64-linux-gnu/libstdc++.so.6)
+frame #8: <unknown function> + 0x7d5b8 (0xffffbe97d5b8 in /usr/lib/aarch64-linux-gnu/libc.so.6)
+frame #9: <unknown function> + 0xe5edc (0xffffbe9e5edc in /usr/lib/aarch64-linux-gnu/libc.so.6)
+ (function get_env_num_threads)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:44:29 [parallel_state.py:1203] world_size=2 rank=0 local_rank=0 distributed_init_method=tcp://127.0.0.1:49461 backend=hccl
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:44:30 [parallel_state.py:1203] world_size=2 rank=1 local_rank=1 distributed_init_method=tcp://127.0.0.1:49461 backend=hccl
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:44:30 [parallel_state.py:1411] rank 1 in world size 2 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 1, EP rank 1
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:44:30 [parallel_state.py:1411] rank 0 in world size 2 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:44:30 [factory.py:64] Creating v1 connector with name: MooncakeConnector and engine_id: 0-6cb5974569c84cd7aad3528182a4ba5c
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0323 20:44:30.423210 314790 transfer_engine_impl.cpp:571] Metrics reporting is disabled (set MC_TE_METRIC=1 to enable)
+I0323 20:44:30.423264 314790 transfer_engine_impl.cpp:105] Transfer Engine parseHostNameWithPort. server_name: 172.17.0.4 port: 12001
+I0323 20:44:30.423307 314790 transfer_engine_impl.cpp:172] Transfer Engine RPC using P2P handshake, listening on 172.17.0.4:16792
+I0323 20:44:30.423530 314790 ascend_direct_transport.cpp:87] install AscendDirectTransport for: 172.17.0.4:16792
+I0323 20:44:30.423579 314790 ascend_direct_transport.cpp:581] Set device id to:0
+I0323 20:44:30.423591 314790 ascend_direct_transport.cpp:593] Find available between 20000 and 20100
+I0323 20:44:30.423631 314790 ascend_direct_transport.cpp:546] AscendDirectTransport set segment desc: host_ip=172.17.0.4, host_port=20002, deviceLogicId=0
+I0323 20:44:30.423662 314790 ascend_direct_transport.cpp:262] Set adxl engine name to 172.17.0.4:20002
+I0323 20:44:30.426324 314790 ascend_direct_transport.cpp:268] Success to initialize adxl engine:172.17.0.4:20002 with device_id:0, pid:314790
+I0323 20:44:30.426360 314790 ascend_direct_transport.cpp:129] Set transfer timeout to:33064
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:44:30 [factory.py:64] Creating v1 connector with name: MooncakeConnector and engine_id: 0-6cb5974569c84cd7aad3528182a4ba5c
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0323 20:44:30.433068 314793 transfer_engine_impl.cpp:571] Metrics reporting is disabled (set MC_TE_METRIC=1 to enable)
+I0323 20:44:30.433126 314793 transfer_engine_impl.cpp:105] Transfer Engine parseHostNameWithPort. server_name: 172.17.0.4 port: 12001
+I0323 20:44:30.433189 314793 transfer_engine_impl.cpp:172] Transfer Engine RPC using P2P handshake, listening on 172.17.0.4:16992
+I0323 20:44:30.433365 314793 ascend_direct_transport.cpp:87] install AscendDirectTransport for: 172.17.0.4:16992
+I0323 20:44:30.433421 314793 ascend_direct_transport.cpp:581] Set device id to:1
+I0323 20:44:30.433432 314793 ascend_direct_transport.cpp:593] Find available between 20100 and 20200
+I0323 20:44:30.433473 314793 ascend_direct_transport.cpp:546] AscendDirectTransport set segment desc: host_ip=172.17.0.4, host_port=20151, deviceLogicId=1
+I0323 20:44:30.433503 314793 ascend_direct_transport.cpp:262] Set adxl engine name to 172.17.0.4:20151
+I0323 20:44:30.436151 314793 ascend_direct_transport.cpp:268] Success to initialize adxl engine:172.17.0.4:20151 with device_id:1, pid:314793
+I0323 20:44:30.436197 314793 ascend_direct_transport.cpp:129] Set transfer timeout to:33064
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m INFO 03-23 20:44:30 [model_runner_v1.py:2369] Starting to load model /root/autodl-tmp/models/Qwen3-32B...
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m INFO 03-23 20:44:30 [model_runner_v1.py:2369] Starting to load model /root/autodl-tmp/models/Qwen3-32B...
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:01<00:22,  1.39s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:02<00:21,  1.42s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:04<00:18,  1.31s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:05<00:17,  1.31s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:06<00:17,  1.42s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:08<00:17,  1.58s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:10<00:17,  1.71s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:12<00:15,  1.78s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:14<00:14,  1.84s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  59% Completed | 10/17 [00:16<00:13,  1.91s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  65% Completed | 11/17 [00:18<00:11,  1.99s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  71% Completed | 12/17 [00:20<00:09,  1.94s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  76% Completed | 13/17 [00:22<00:07,  1.91s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  82% Completed | 14/17 [00:24<00:05,  1.85s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  88% Completed | 15/17 [00:26<00:03,  1.82s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards:  94% Completed | 16/17 [00:27<00:01,  1.82s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m INFO 03-23 20:45:00 [model_runner_v1.py:2386] Loading model weights took 30.5425 GB
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards: 100% Completed | 17/17 [00:29<00:00,  1.65s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m Loading safetensors checkpoint shards: 100% Completed | 17/17 [00:29<00:00,  1.71s/it]
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m 
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m INFO 03-23 20:45:01 [default_loader.py:308] Loading weights took 29.26 seconds
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m INFO 03-23 20:45:01 [model_runner_v1.py:2386] Loading model weights took 30.5425 GB
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m INFO 03-23 20:45:12 [worker.py:302] Available memory: 20674988748, total memory: 65464696832
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m INFO 03-23 20:45:12 [worker.py:302] Available memory: 20582087372, total memory: 65464696832
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:45:12 [kv_cache_utils.py:1291] GPU KV cache size: 156,928 tokens
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m INFO 03-23 20:45:12 [kv_cache_utils.py:1296] Maximum concurrency for 32,768 tokens per request: 4.79x
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m INFO 03-23 20:45:12 [mooncake_connector.py:1250] num_blocks: 1226, block_shape: torch.Size([128, 4, 128])
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m INFO 03-23 20:45:12 [mooncake_connector.py:1252] Registering KV_Caches. use_mla: False, use_sparse: False, shape torch.Size([1226, 128, 4, 128])
+I0323 20:45:12.911339 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dab8400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911533 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dac2000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911588 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dacba00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911623 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dad5600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911659 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dadf000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911690 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dae8c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911723 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12daf2800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911774 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dafc200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911818 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db05e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911851 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db0fa00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911880 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db19400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911906 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db23000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911932 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db2cc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911960 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db36600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.911989 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db40200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912019 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db49c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912045 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db53800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912073 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db5d400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912101 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db66e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912128 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db70a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912161 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db7a600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912189 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db84000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912215 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db8dc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912246 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db97600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912282 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dba1200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912315 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbaae00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912344 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbb4800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912374 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbbe400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912402 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbc8000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912431 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbd1a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912459 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbdb600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912490 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbe5200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912523 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbeec00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912563 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbf8800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912595 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc02200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912622 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc0be00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912652 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc15a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912683 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc1f400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912714 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc29000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912748 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc32c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912778 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc3c600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912807 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc46200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912837 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc4fc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912863 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc59800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912890 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc63400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912918 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc6ce00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912946 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc76a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.912985 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc80600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913015 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc8a000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913048 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc93c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913077 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc9d800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913106 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dca7200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913132 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcb0e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913159 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcba800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913195 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcc4400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913224 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcce000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913252 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcd7a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913280 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dce1600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913309 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dceb200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913347 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcf4c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913378 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcfe800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913410 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd08400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913452 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd11e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913483 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd1ba00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913515 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd25400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913547 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd2f000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913580 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd38c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913611 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd42600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913640 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd4c200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913671 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd55e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913702 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd5f800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913736 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd69400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913770 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd72e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913828 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd7ca00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913864 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd86600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913897 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd90000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913926 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd99c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913965 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dda3800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.913998 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddad200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914027 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddb6e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914058 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddc0a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914090 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddca400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914124 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddd4000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914156 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dddda00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914199 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dde7600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914232 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddf1200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914266 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddfac00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914296 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de04800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914328 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de0e400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914366 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de17e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914398 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de21a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914448 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de2b600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914510 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de35000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914547 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de3ec00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914582 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de48600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914615 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de52200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914649 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de5be00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914682 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de65800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914718 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de6f400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914752 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de79000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914784 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de82a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914817 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de8c600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914849 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de96000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914882 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de9fc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914916 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dea9800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914948 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12deb3200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.914983 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12debce00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915036 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dec6a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915071 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ded0400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915105 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12deda000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915165 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dee3c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915200 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12deed600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915233 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12def7200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915266 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df00c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915298 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df0a800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915328 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df14400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915362 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df1de00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915395 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df27a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915426 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df31600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915458 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df3b000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915493 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df44c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915529 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df4e600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915571 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df58200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915606 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df61e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915640 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df6b800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915678 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df75400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915711 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df7f000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.915743 314793 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df88a00000, length:160694272, location:*, mem type:0
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m INFO 03-23 20:45:12 [mooncake_connector.py:221] Starting listening on path: tcp://172.17.0.4:20002
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226] Mooncake KVCacheSendingThread exception: Address already in use (addr='tcp://172.17.0.4:20002')
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226] Traceback (most recent call last):
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/distributed/mooncake_connector.py", line 222, in run
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]     with zmq_ctx(zmq.ROUTER, path) as sock:  # type: ignore
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]   File "/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/contextlib.py", line 137, in __enter__
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]     return next(self.gen)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]            ^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/distributed/mooncake_connector.py", line 1736, in zmq_ctx
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]     yield make_zmq_socket(ctx=ctx,
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]           ^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/utils/network_utils.py", line 307, in make_zmq_socket
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]     socket.bind(path)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/zmq/sugar/socket.py", line 320, in bind
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]     super().bind(addr)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]   File "zmq/backend/cython/_zmq.py", line 1009, in zmq.backend.cython._zmq.Socket.bind
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226]   File "zmq/backend/cython/_zmq.py", line 190, in zmq.backend.cython._zmq._check_rc
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:12 [mooncake_connector.py:226] zmq.error.ZMQError: Address already in use (addr='tcp://172.17.0.4:20002')
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m INFO 03-23 20:45:12 [mooncake_connector.py:1250] num_blocks: 1226, block_shape: torch.Size([128, 4, 128])
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m INFO 03-23 20:45:12 [mooncake_connector.py:1252] Registering KV_Caches. use_mla: False, use_sparse: False, shape torch.Size([1226, 128, 4, 128])
+I0323 20:45:12.935621 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dab8400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.935844 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dac2000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.935899 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dacba00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.935935 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dad5600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.935988 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dadf000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936022 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dae8c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936053 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12daf2800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936082 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dafc200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936110 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db05e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936136 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db0fa00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936165 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db19400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936193 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db23000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936219 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db2cc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936249 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db36600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936275 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db40200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936303 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db49c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936327 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db53800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936355 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db5d400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936383 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db66e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936408 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db70a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936446 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db7a600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936473 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db84000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936498 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db8dc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936524 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12db97600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936556 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dba1200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936586 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbaae00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936612 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbb4800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936640 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbbe400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936667 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbc8000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936694 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbd1a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936730 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbdb600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936762 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbe5200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936789 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbeec00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936825 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dbf8800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936854 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc02200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936882 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc0be00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936911 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc15a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936939 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc1f400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.936967 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc29000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937000 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc32c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937027 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc3c600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937053 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc46200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937083 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc4fc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937110 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc59800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937135 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc63400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937163 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc6ce00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937189 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc76a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937225 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc80600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937253 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc8a000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937283 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc93c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937311 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dc9d800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937345 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dca7200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937371 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcb0e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937399 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcba800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937433 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcc4400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937458 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcce000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937496 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcd7a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937525 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dce1600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937553 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dceb200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937589 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcf4c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937620 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dcfe800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937652 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd08400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937690 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd11e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937718 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd1ba00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937748 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd25400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937783 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd2f000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937813 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd38c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937844 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd42600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937875 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd4c200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937904 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd55e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937932 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd5f800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937963 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd69400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.937992 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd72e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938027 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd7ca00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938058 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd86600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938087 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd90000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938120 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dd99c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938169 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dda3800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938208 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddad200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938239 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddb6e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938271 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddc0a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938311 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddca400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938341 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddd4000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938380 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dddda00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938411 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dde7600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938458 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddf1200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938512 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ddfac00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938548 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de04800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938581 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de0e400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938617 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de17e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938647 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de21a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938679 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de2b600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938745 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de35000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938781 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de3ec00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938812 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de48600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938848 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de52200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938889 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de5be00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938920 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de65800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938957 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de6f400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.938988 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de79000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939018 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de82a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939050 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de8c600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939085 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de96000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939116 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12de9fc00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939146 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dea9800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939177 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12deb3200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939208 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12debce00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939291 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dec6a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939329 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12ded0400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939364 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12deda000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939402 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12dee3c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939435 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12deed600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939468 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12def7200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939503 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df00c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939541 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df0a800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939574 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df14400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939606 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df1de00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939642 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df27a00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939677 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df31600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939711 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df3b000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939747 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df44c00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939783 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df4e600000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939826 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df58200000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939860 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df61e00000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939895 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df6b800000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939929 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df75400000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939960 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df7f000000, length:160694272, location:*, mem type:0
+I0323 20:45:12.939994 314790 ascend_direct_transport.cpp:444] AscendDirectTransport register mem addr:0x12df88a00000, length:160694272, location:*, mem type:0
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP0 pid=314790)[0;0m INFO 03-23 20:45:12 [mooncake_connector.py:221] Starting listening on path: tcp://172.17.0.4:20001
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824] WorkerProc hit an exception.
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824] Traceback (most recent call last):
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 819, in worker_busy_loop
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     output = func(*args, **kwargs)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]              ^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/worker/worker_base.py", line 320, in initialize_from_config
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     self.worker.initialize_from_config(kv_cache_config)  # type: ignore
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/worker/worker.py", line 449, in initialize_from_config
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     self.model_runner.initialize_kv_cache(kv_cache_config)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/worker/model_runner_v1.py", line 2420, in initialize_kv_cache
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     get_kv_transfer_group().register_kv_caches(kv_caches)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/distributed/mooncake_connector.py", line 858, in register_kv_caches
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     self.connector_worker.register_kv_caches(kv_caches)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/distributed/mooncake_connector.py", line 1318, in register_kv_caches
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     raise RuntimeError(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824] RuntimeError: KV Cache sending/receiving thread failed to start.
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824] Traceback (most recent call last):
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 819, in worker_busy_loop
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     output = func(*args, **kwargs)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]              ^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/worker/worker_base.py", line 320, in initialize_from_config
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     self.worker.initialize_from_config(kv_cache_config)  # type: ignore
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/worker/worker.py", line 449, in initialize_from_config
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     self.model_runner.initialize_kv_cache(kv_cache_config)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/worker/model_runner_v1.py", line 2420, in initialize_kv_cache
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     get_kv_transfer_group().register_kv_caches(kv_caches)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/distributed/mooncake_connector.py", line 858, in register_kv_caches
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     self.connector_worker.register_kv_caches(kv_caches)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/distributed/mooncake_connector.py", line 1318, in register_kv_caches
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824]     raise RuntimeError(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824] RuntimeError: KV Cache sending/receiving thread failed to start.
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m [0;36m(Worker_TP1 pid=314793)[0;0m ERROR 03-23 20:45:15 [multiproc_executor.py:824] 
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68] EngineCore failed to start.
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68] Traceback (most recent call last):
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/patch/platform/patch_core.py", line 59, in run_engine_core
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]     engine_core = EngineCoreProc(*args, **kwargs)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 637, in __init__
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]     super().__init__(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 109, in __init__
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]     num_gpu_blocks, num_cpu_blocks, kv_cache_config = self._initialize_kv_caches(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 256, in _initialize_kv_caches
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]     self.model_executor.initialize_from_config(kv_cache_configs)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/abstract.py", line 115, in initialize_from_config
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]     self.collective_rpc("initialize_from_config", args=(kv_cache_configs,))
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 359, in collective_rpc
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]     return aggregate(get_response())
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]                      ^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 342, in get_response
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68]     raise RuntimeError(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:15 [patch_core.py:68] RuntimeError: Worker failed with error 'KV Cache sending/receiving thread failed to start.', please check the stack trace above for the root cause
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m ERROR 03-23 20:45:16 [multiproc_executor.py:231] Worker proc VllmWorker-0 died unexpectedly, shutting down executor.
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m Process EngineCore_DP0:
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m Traceback (most recent call last):
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     self.run()
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/multiprocessing/process.py", line 108, in run
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     self._target(*self._args, **self._kwargs)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/patch/platform/patch_core.py", line 72, in run_engine_core
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     raise e
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm_ascend/patch/platform/patch_core.py", line 59, in run_engine_core
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 637, in __init__
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     super().__init__(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 109, in __init__
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     num_gpu_blocks, num_cpu_blocks, kv_cache_config = self._initialize_kv_caches(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 256, in _initialize_kv_caches
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     self.model_executor.initialize_from_config(kv_cache_configs)
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/abstract.py", line 115, in initialize_from_config
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     self.collective_rpc("initialize_from_config", args=(kv_cache_configs,))
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 359, in collective_rpc
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     return aggregate(get_response())
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m                      ^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/executor/multiproc_executor.py", line 342, in get_response
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m     raise RuntimeError(
+[0;36m(APIServer pid=314284)[0;0m [0;36m(EngineCore_DP0 pid=314783)[0;0m RuntimeError: Worker failed with error 'KV Cache sending/receiving thread failed to start.', please check the stack trace above for the root cause
+/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[0;36m(APIServer pid=314284)[0;0m Traceback (most recent call last):
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/bin/vllm", line 10, in <module>
+[0;36m(APIServer pid=314284)[0;0m     sys.exit(main())
+[0;36m(APIServer pid=314284)[0;0m              ^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/entrypoints/cli/main.py", line 73, in main
+[0;36m(APIServer pid=314284)[0;0m     args.dispatch_function(args)
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/entrypoints/cli/serve.py", line 60, in cmd
+[0;36m(APIServer pid=314284)[0;0m     uvloop.run(run_server(args))
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/__init__.py", line 92, in run
+[0;36m(APIServer pid=314284)[0;0m     return runner.run(wrapper())
+[0;36m(APIServer pid=314284)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/asyncio/runners.py", line 118, in run
+[0;36m(APIServer pid=314284)[0;0m     return self._loop.run_until_complete(task)
+[0;36m(APIServer pid=314284)[0;0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/uvloop/__init__.py", line 48, in wrapper
+[0;36m(APIServer pid=314284)[0;0m     return await main
+[0;36m(APIServer pid=314284)[0;0m            ^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 1398, in run_server
+[0;36m(APIServer pid=314284)[0;0m     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 1417, in run_server_worker
+[0;36m(APIServer pid=314284)[0;0m     async with build_async_engine_client(
+[0;36m(APIServer pid=314284)[0;0m   File "/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/contextlib.py", line 210, in __aenter__
+[0;36m(APIServer pid=314284)[0;0m     return await anext(self.gen)
+[0;36m(APIServer pid=314284)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 172, in build_async_engine_client
+[0;36m(APIServer pid=314284)[0;0m     async with build_async_engine_client_from_engine_args(
+[0;36m(APIServer pid=314284)[0;0m   File "/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/contextlib.py", line 210, in __aenter__
+[0;36m(APIServer pid=314284)[0;0m     return await anext(self.gen)
+[0;36m(APIServer pid=314284)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 213, in build_async_engine_client_from_engine_args
+[0;36m(APIServer pid=314284)[0;0m     async_llm = AsyncLLM.from_vllm_config(
+[0;36m(APIServer pid=314284)[0;0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 215, in from_vllm_config
+[0;36m(APIServer pid=314284)[0;0m     return cls(
+[0;36m(APIServer pid=314284)[0;0m            ^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 134, in __init__
+[0;36m(APIServer pid=314284)[0;0m     self.engine_core = EngineCoreClient.make_async_mp_client(
+[0;36m(APIServer pid=314284)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 121, in make_async_mp_client
+[0;36m(APIServer pid=314284)[0;0m     return AsyncMPClient(*client_args)
+[0;36m(APIServer pid=314284)[0;0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 820, in __init__
+[0;36m(APIServer pid=314284)[0;0m     super().__init__(
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 477, in __init__
+[0;36m(APIServer pid=314284)[0;0m     with launch_core_engines(vllm_config, executor_class, log_stats) as (
+[0;36m(APIServer pid=314284)[0;0m   File "/root/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/contextlib.py", line 144, in __exit__
+[0;36m(APIServer pid=314284)[0;0m     next(self.gen)
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 903, in launch_core_engines
+[0;36m(APIServer pid=314284)[0;0m     wait_for_engine_startup(
+[0;36m(APIServer pid=314284)[0;0m   File "/root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 960, in wait_for_engine_startup
+[0;36m(APIServer pid=314284)[0;0m     raise RuntimeError(
+[0;36m(APIServer pid=314284)[0;0m RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {'EngineCore_DP0': 1}
+[0;36m(APIServer pid=314284)[0;0m [ERROR] 2026-03-23-20:45:16 (PID:314284, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+[0;36m(APIServer pid=314284)[0;0m sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

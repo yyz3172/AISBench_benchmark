@@ -1,0 +1,743 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+<frozen importlib._bootstrap>:241: UserWarning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffada148c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffad9bc1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffaea0c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xffffaea0c7b8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffaea0dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1dd0 (0xffffb80dd7d0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #6: PyInit__C + 0xc (0xffffb8c60160 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/_C.cpython-311-aarch64-linux-gnu.so)
+frame #7: <unknown function> + 0x4b8840 (0xaaaad0c18840 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #8: <unknown function> + 0x34ea20 (0xaaaad0aaea20 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #9: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #10: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #11: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #12: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #13: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #14: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #15: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #16: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #17: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #18: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #19: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #20: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #21: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #22: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #23: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #24: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #25: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #26: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #27: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #28: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #29: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #30: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #31: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #32: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #33: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #34: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #35: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #36: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #37: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #38: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #39: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #40: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #41: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #42: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #43: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #44: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #45: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #46: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #47: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #48: <unknown function> + 0x383a78 (0xaaaad0ae3a78 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #49: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #50: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #51: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #52: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #53: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #54: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #55: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #56: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #57: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #58: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #59: <unknown function> + 0x4d21e4 (0xaaaad0c321e4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #60: <unknown function> + 0x25b680 (0xaaaad09bb680 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #61: _PyRun_SimpleFileObject + 0x10c (0xaaaad09bb0ec in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #62: _PyRun_AnyFileObject + 0xe0 (0xaaaad09baac0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+ (Triggered internally at /pytorch/aten/src/ATen/ParallelCommon.cpp:44.)
+<frozen importlib._bootstrap>:241: UserWarning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffada148c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffad9bc1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffaea0c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffaea0c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffaea0dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1dd0 (0xffffb80dd7d0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_python.so)
+frame #6: PyInit__C + 0xc (0xffffb8c60160 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/_C.cpython-311-aarch64-linux-gnu.so)
+frame #7: <unknown function> + 0x4b8840 (0xaaaad0c18840 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #8: <unknown function> + 0x34ea20 (0xaaaad0aaea20 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #9: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #10: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #11: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #12: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #13: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #14: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #15: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #16: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #17: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #18: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #19: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #20: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #21: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #22: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #23: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #24: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #25: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #26: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #27: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #28: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #29: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #30: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #31: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #32: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #33: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #34: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #35: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #36: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #37: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #38: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #39: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #40: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #41: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #42: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #43: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #44: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #45: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #46: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #47: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #48: <unknown function> + 0x383a78 (0xaaaad0ae3a78 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #49: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #50: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #51: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #52: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #53: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #54: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #55: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #56: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #57: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #58: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #59: <unknown function> + 0x4d21e4 (0xaaaad0c321e4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #60: <unknown function> + 0x25b680 (0xaaaad09bb680 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #61: _PyRun_SimpleFileObject + 0x10c (0xaaaad09bb0ec in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #62: _PyRun_AnyFileObject + 0xe0 (0xaaaad09baac0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+ (Triggered internally at /pytorch/aten/src/ATen/ParallelCommon.cpp:44.)
+[W323 12:06:59.881556351 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffada148c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffad9bc1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffaea0c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xffffaea0c7b8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffaea0dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1f8 (0xffffb9c323d8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch_npu/_C.cpython-311-aarch64-linux-gnu.so)
+frame #6: <unknown function> + 0x4b8840 (0xaaaad0c18840 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #7: <unknown function> + 0x34ea20 (0xaaaad0aaea20 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #8: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #9: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #10: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #11: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #12: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #13: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #14: <unknown function> + 0x383a78 (0xaaaad0ae3a78 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #15: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #16: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #17: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #18: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #19: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #20: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #21: PyImport_ImportModuleLevelObject + 0x3dc (0xaaaad0b316b4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #22: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #23: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #24: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #25: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #26: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #27: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #28: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #29: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #30: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #31: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #32: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #33: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #34: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #35: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #36: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #37: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #38: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #39: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #40: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #41: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #42: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #43: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #44: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #45: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #46: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #47: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #48: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #49: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #50: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #51: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #52: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #53: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #54: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #55: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #56: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #57: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #58: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #59: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #60: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #61: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #62: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+ (function get_env_num_threads)
+[W323 12:06:59.883906889 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xffffada148c0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xffffad9bc1f0 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xffffaea0c72c in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xffffaea0c7c8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xffffaea0dc14 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1f8 (0xffffb9c323d8 in /root/autodl-tmp/py_venv/vllm2/lib/python3.11/site-packages/torch_npu/_C.cpython-311-aarch64-linux-gnu.so)
+frame #6: <unknown function> + 0x4b8840 (0xaaaad0c18840 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #7: <unknown function> + 0x34ea20 (0xaaaad0aaea20 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #8: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #9: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #10: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #11: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #12: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #13: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #14: <unknown function> + 0x383a78 (0xaaaad0ae3a78 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #15: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #16: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #17: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #18: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #19: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #20: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #21: PyImport_ImportModuleLevelObject + 0x3dc (0xaaaad0b316b4 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #22: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #23: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #24: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #25: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #26: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #27: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #28: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #29: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #30: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #31: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #32: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #33: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #34: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #35: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #36: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #37: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #38: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #39: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #40: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #41: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #42: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #43: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #44: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #45: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #46: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #47: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #48: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #49: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #50: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #51: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #52: <unknown function> + 0x49d730 (0xaaaad0bfd730 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #53: <unknown function> + 0x34eb18 (0xaaaad0aaeb18 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #54: _PyEval_EvalFrameDefault + 0x328cc (0xaaaad0b186ac in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #55: _PyFunction_Vectorcall + 0x1e0 (0xaaaad0a8c3c0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #56: <unknown function> + 0x32bb40 (0xaaaad0a8bb40 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #57: <unknown function> + 0x32eb08 (0xaaaad0a8eb08 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #58: PyObject_CallMethodObjArgs + 0xa0 (0xaaaad0b93810 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #59: PyImport_ImportModuleLevelObject + 0xbc8 (0xaaaad0b31ea0 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #60: _PyEval_EvalFrameDefault + 0x221a0 (0xaaaad0b07f80 in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #61: <unknown function> + 0x49f97c (0xaaaad0bff97c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+frame #62: PyEval_EvalCode + 0xe0 (0xaaaad0bff72c in /root/autodl-tmp/py_venv/vllm2/bin/python3)
+ (function get_env_num_threads)
+INFO:     Started server process [275816]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Initialized 1 prefill clients and 2 decode clients.
+INFO:     127.0.0.1:57324 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57340 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58360 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57992 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57358 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57792 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58186 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58332 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57538 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57702 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57838 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57964 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58288 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58376 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57454 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57612 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57768 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57878 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57488 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57662 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58044 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57752 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58008 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58302 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57798 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57926 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58192 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57554 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57840 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57456 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57626 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57772 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57884 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58160 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57492 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57668 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58046 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57410 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57570 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58098 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58340 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57890 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57938 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57388 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57504 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57804 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57716 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57844 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57972 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58240 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57466 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57640 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57774 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58162 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57514 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57674 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57814 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58198 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57426 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57572 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58102 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58016 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57950 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57688 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58402 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57976 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57728 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57846 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58248 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58356 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57476 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57642 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57778 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58174 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57522 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58072 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58212 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58410 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57582 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58118 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58372 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58026 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58318 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57960 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58076 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58390 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57440 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57736 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57856 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57988 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57484 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57788 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58180 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58330 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57400 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57524 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57698 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57822 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57962 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58220 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57764 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57868 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58132 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57342 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57646 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57914 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58034 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57466 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34730 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34736 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34750 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50710 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39228 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39240 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55664 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58360 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57838 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55680 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58016 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55740 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55816 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55870 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55682 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55762 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55838 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55930 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55962 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56066 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55724 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55800 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55936 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55984 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58288 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57426 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55744 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55824 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55884 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55912 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55956 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55994 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56008 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56064 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58160 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55686 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55708 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55778 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55842 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55934 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56040 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55900 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55732 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55806 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55944 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56052 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55754 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55826 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55918 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56024 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58072 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55698 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55794 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55850 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55968 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56074 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56086 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56170 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56246 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56302 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56362 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56534 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56116 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56180 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56276 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56336 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56410 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56140 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56220 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56376 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56428 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56548 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56094 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56174 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56262 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56316 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56384 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56438 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56472 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56512 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56556 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56192 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56122 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56284 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56352 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56080 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56154 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56236 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56292 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56378 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56460 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56510 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56532 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57662 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56110 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56176 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56270 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56488 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57340 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56204 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56136 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56286 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56424 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56446 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56498 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56528 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56076 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56568 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56584 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56610 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56620 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48888 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42540 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42552 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48872 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48890 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39228 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58798 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55664 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58360 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58806 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58812 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56610 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38386 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38396 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56008 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38408 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38424 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38406 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38426 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55806 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38464 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38510 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57374 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38564 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38480 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38538 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38608 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38494 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38432 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38516 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55994 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38590 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38488 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38554 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55962 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55842 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38594 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38448 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38502 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56024 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38526 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38578 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38490 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55732 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38630 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38664 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38686 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38702 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38708 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38718 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38730 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38614 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38638 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38654 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38676 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38690 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38706 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38714 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38722 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38736 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38742 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36256 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56116 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36260 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36386 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36366 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56284 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36396 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36544 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36346 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36414 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36454 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36318 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56512 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36418 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56410 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56510 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57340 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57662 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56352 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36518 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36448 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36304 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56192 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36560 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36400 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56378 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36270 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56534 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56110 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36446 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56302 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56270 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36572 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56170 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36362 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36530 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36532 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36498 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56276 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36370 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36404 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36282 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36330 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56204 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36434 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36516 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36512 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36470 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36290 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56154 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36550 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48888 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51168 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51178 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36446 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51182 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55440 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35648 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55664 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35658 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58806 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38386 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38420 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38428 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38450 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38442 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38426 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38460 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38478 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38492 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38464 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38476 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38496 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38578 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38538 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38508 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38524 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38532 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38544 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38498 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38526 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38432 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38528 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38534 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38546 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38556 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38576 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38594 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38600 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38606 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38612 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38618 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38624 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38572 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38558 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38592 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56154 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42424 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42432 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42438 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42468 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42452 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56352 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56510 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36486 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42490 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42508 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42526 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42566 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42492 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42542 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42574 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42552 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42512 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42488 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42496 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42470 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42482 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42592 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42620 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42642 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42656 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42606 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36532 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42590 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42618 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42630 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43426 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46734 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37806 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37816 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38420 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38428 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38442 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38430 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38526 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57904 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57924 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57912 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57916 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57940 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57950 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57954 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57980 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57988 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57990 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57992 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50884 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50900 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50872 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50914 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50958 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50928 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50942 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50964 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50970 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50984 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50992 - "POST /v1/chat/completions HTTP/1.1" 200 OK

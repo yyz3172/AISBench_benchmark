@@ -1,0 +1,786 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+<frozen importlib._bootstrap>:241: UserWarning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde4f0c7b8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1dd0 (0xfffdee51d870 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #6: PyInit__C + 0xc (0xfffdf6d60160 in /root/miniconda3/lib/python3.10/site-packages/torch/_C.cpython-310-aarch64-linux-gnu.so)
+frame #7: /root/miniconda3/bin/python() [0x4fae9c]
+frame #8: /root/miniconda3/bin/python() [0x4f7758]
+frame #9: /root/miniconda3/bin/python() [0x5d6358]
+frame #10: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #11: /root/miniconda3/bin/python() [0x4d5860]
+frame #12: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #13: /root/miniconda3/bin/python() [0x4d5860]
+frame #14: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #15: /root/miniconda3/bin/python() [0x4d5860]
+frame #16: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x4d5860]
+frame #18: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #19: /root/miniconda3/bin/python() [0x4d5860]
+frame #20: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: /root/miniconda3/bin/python() [0x43e768]
+frame #23: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #24: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #25: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #26: /root/miniconda3/bin/python() [0x4d5860]
+frame #27: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #28: /root/miniconda3/bin/python() [0x601440]
+frame #29: /root/miniconda3/bin/python() [0x5d6358]
+frame #30: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #31: /root/miniconda3/bin/python() [0x4d5860]
+frame #32: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #33: /root/miniconda3/bin/python() [0x4d5860]
+frame #34: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: /root/miniconda3/bin/python() [0x43e768]
+frame #41: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #42: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #44: /root/miniconda3/bin/python() [0x4d5860]
+frame #45: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #46: /root/miniconda3/bin/python() [0x601440]
+frame #47: /root/miniconda3/bin/python() [0x5d6358]
+frame #48: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #49: /root/miniconda3/bin/python() [0x4d5860]
+frame #50: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #51: /root/miniconda3/bin/python() [0x4d5860]
+frame #52: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #53: /root/miniconda3/bin/python() [0x4d5860]
+frame #54: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #55: /root/miniconda3/bin/python() [0x4d5860]
+frame #56: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #57: /root/miniconda3/bin/python() [0x4d5860]
+frame #58: /root/miniconda3/bin/python() [0x43e768]
+frame #59: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #60: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #61: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #62: /root/miniconda3/bin/python() [0x4d5860]
+ (Triggered internally at /pytorch/aten/src/ATen/ParallelCommon.cpp:44.)
+<frozen importlib._bootstrap>:241: UserWarning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde4f0c7c8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1dd0 (0xfffdee51d870 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #6: PyInit__C + 0xc (0xfffdf6d60160 in /root/miniconda3/lib/python3.10/site-packages/torch/_C.cpython-310-aarch64-linux-gnu.so)
+frame #7: /root/miniconda3/bin/python() [0x4fae9c]
+frame #8: /root/miniconda3/bin/python() [0x4f7758]
+frame #9: /root/miniconda3/bin/python() [0x5d6358]
+frame #10: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #11: /root/miniconda3/bin/python() [0x4d5860]
+frame #12: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #13: /root/miniconda3/bin/python() [0x4d5860]
+frame #14: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #15: /root/miniconda3/bin/python() [0x4d5860]
+frame #16: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x4d5860]
+frame #18: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #19: /root/miniconda3/bin/python() [0x4d5860]
+frame #20: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: /root/miniconda3/bin/python() [0x43e768]
+frame #23: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #24: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #25: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #26: /root/miniconda3/bin/python() [0x4d5860]
+frame #27: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #28: /root/miniconda3/bin/python() [0x601440]
+frame #29: /root/miniconda3/bin/python() [0x5d6358]
+frame #30: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #31: /root/miniconda3/bin/python() [0x4d5860]
+frame #32: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #33: /root/miniconda3/bin/python() [0x4d5860]
+frame #34: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: /root/miniconda3/bin/python() [0x43e768]
+frame #41: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #42: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #44: /root/miniconda3/bin/python() [0x4d5860]
+frame #45: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #46: /root/miniconda3/bin/python() [0x601440]
+frame #47: /root/miniconda3/bin/python() [0x5d6358]
+frame #48: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #49: /root/miniconda3/bin/python() [0x4d5860]
+frame #50: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #51: /root/miniconda3/bin/python() [0x4d5860]
+frame #52: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #53: /root/miniconda3/bin/python() [0x4d5860]
+frame #54: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #55: /root/miniconda3/bin/python() [0x4d5860]
+frame #56: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #57: /root/miniconda3/bin/python() [0x4d5860]
+frame #58: /root/miniconda3/bin/python() [0x43e768]
+frame #59: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #60: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #61: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #62: /root/miniconda3/bin/python() [0x4d5860]
+ (Triggered internally at /pytorch/aten/src/ATen/ParallelCommon.cpp:44.)
+[W323 20:51:44.933045676 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde4f0c7b8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1f8 (0xfffcdd9123c8 in /root/miniconda3/lib/python3.10/site-packages/torch_npu/_C.cpython-310-aarch64-linux-gnu.so)
+frame #6: /root/miniconda3/bin/python() [0x4fae9c]
+frame #7: /root/miniconda3/bin/python() [0x4f7758]
+frame #8: /root/miniconda3/bin/python() [0x5d6358]
+frame #9: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #10: /root/miniconda3/bin/python() [0x4d5860]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #16: /root/miniconda3/bin/python() [0x4d5860]
+frame #17: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #18: /root/miniconda3/bin/python() [0x4d5860]
+frame #19: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #20: /root/miniconda3/bin/python() [0x4d5860]
+frame #21: /root/miniconda3/bin/python() [0x43e768]
+frame #22: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #23: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #24: /root/miniconda3/bin/python() [0x5ff924]
+frame #25: /root/miniconda3/bin/python() [0x5d59ac]
+frame #26: _PyObject_Call + 0x68 (0x43dbf8 in /root/miniconda3/bin/python)
+frame #27: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #28: /root/miniconda3/bin/python() [0x4d5860]
+frame #29: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #30: /root/miniconda3/bin/python() [0x4d5860]
+frame #31: /root/miniconda3/bin/python() [0x43e768]
+frame #32: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #33: PyImport_ImportModuleLevelObject + 0x2e0 (0x4f95f4 in /root/miniconda3/bin/python)
+frame #34: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x601440]
+frame #38: /root/miniconda3/bin/python() [0x5d6358]
+frame #39: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #40: /root/miniconda3/bin/python() [0x4d5860]
+frame #41: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #42: /root/miniconda3/bin/python() [0x4d5860]
+frame #43: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #44: /root/miniconda3/bin/python() [0x4d5860]
+frame #45: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #46: /root/miniconda3/bin/python() [0x4d5860]
+frame #47: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #48: /root/miniconda3/bin/python() [0x4d5860]
+frame #49: /root/miniconda3/bin/python() [0x43e768]
+frame #50: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #51: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #53: /root/miniconda3/bin/python() [0x4d5860]
+frame #54: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #55: /root/miniconda3/bin/python() [0x601440]
+frame #56: /root/miniconda3/bin/python() [0x5d6358]
+frame #57: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #58: /root/miniconda3/bin/python() [0x4d5860]
+frame #59: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #60: /root/miniconda3/bin/python() [0x4d5860]
+frame #61: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #62: /root/miniconda3/bin/python() [0x4d5860]
+ (function get_env_num_threads)
+[W323 20:51:44.935261026 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde4f0c7c8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: initModule + 0x1f8 (0xfffcdd9123c8 in /root/miniconda3/lib/python3.10/site-packages/torch_npu/_C.cpython-310-aarch64-linux-gnu.so)
+frame #6: /root/miniconda3/bin/python() [0x4fae9c]
+frame #7: /root/miniconda3/bin/python() [0x4f7758]
+frame #8: /root/miniconda3/bin/python() [0x5d6358]
+frame #9: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #10: /root/miniconda3/bin/python() [0x4d5860]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #16: /root/miniconda3/bin/python() [0x4d5860]
+frame #17: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #18: /root/miniconda3/bin/python() [0x4d5860]
+frame #19: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #20: /root/miniconda3/bin/python() [0x4d5860]
+frame #21: /root/miniconda3/bin/python() [0x43e768]
+frame #22: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #23: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #24: /root/miniconda3/bin/python() [0x5ff924]
+frame #25: /root/miniconda3/bin/python() [0x5d59ac]
+frame #26: _PyObject_Call + 0x68 (0x43dbf8 in /root/miniconda3/bin/python)
+frame #27: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #28: /root/miniconda3/bin/python() [0x4d5860]
+frame #29: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #30: /root/miniconda3/bin/python() [0x4d5860]
+frame #31: /root/miniconda3/bin/python() [0x43e768]
+frame #32: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #33: PyImport_ImportModuleLevelObject + 0x2e0 (0x4f95f4 in /root/miniconda3/bin/python)
+frame #34: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x601440]
+frame #38: /root/miniconda3/bin/python() [0x5d6358]
+frame #39: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #40: /root/miniconda3/bin/python() [0x4d5860]
+frame #41: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #42: /root/miniconda3/bin/python() [0x4d5860]
+frame #43: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #44: /root/miniconda3/bin/python() [0x4d5860]
+frame #45: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #46: /root/miniconda3/bin/python() [0x4d5860]
+frame #47: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #48: /root/miniconda3/bin/python() [0x4d5860]
+frame #49: /root/miniconda3/bin/python() [0x43e768]
+frame #50: _PyObject_CallMethodIdObjArgs + 0xe0 (0x43eb24 in /root/miniconda3/bin/python)
+frame #51: PyImport_ImportModuleLevelObject + 0x520 (0x4f9834 in /root/miniconda3/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x8358 (0x42e418 in /root/miniconda3/bin/python)
+frame #53: /root/miniconda3/bin/python() [0x4d5860]
+frame #54: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #55: /root/miniconda3/bin/python() [0x601440]
+frame #56: /root/miniconda3/bin/python() [0x5d6358]
+frame #57: _PyEval_EvalFrameDefault + 0x2064 (0x428124 in /root/miniconda3/bin/python)
+frame #58: /root/miniconda3/bin/python() [0x4d5860]
+frame #59: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #60: /root/miniconda3/bin/python() [0x4d5860]
+frame #61: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #62: /root/miniconda3/bin/python() [0x4d5860]
+ (function get_env_num_threads)
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+[2026-03-23 20:51:51,510] [ais_bench] [[32mINFO[0m] Loading vllm_api_stream_chat_multiturn: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./models/vllm_api/vllm_api_stream_chat_multiturn.py
+[2026-03-23 20:51:51,517] [ais_bench] [[32mINFO[0m] Loading sharegpt_gen: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./datasets/sharegpt/sharegpt_gen.py
+[2026-03-23 20:51:51,521] [ais_bench] [[32mINFO[0m] Loading example: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./summarizers/example.py
+[2026-03-23 20:51:51,576] [ais_bench] [[32mINFO[0m] Current exp folder: outputs/sharegpt_Qwen3-32B/1P2_2D2/20260323_205137
+[2026-03-23 20:51:51,591] [ais_bench] [[32mINFO[0m] Starting inference tasks...
+[2026-03-23 20:51:51,592] [ais_bench] [[32mINFO[0m] Partitioned into 1 tasks.
+[2026-03-23 20:51:51,592] [ais_bench] [[32mINFO[0m] Merging datasets with the same model and inferencer...
+[W323 20:51:51.049715435 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde4f0c7b8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #29: /root/miniconda3/bin/python() [0x4d5860]
+frame #30: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #31: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #32: /root/miniconda3/bin/python() [0x48ece0]
+frame #33: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #34: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #41: /root/miniconda3/bin/python() [0x4d5860]
+frame #42: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #43: /root/miniconda3/bin/python() [0x4d5860]
+frame #44: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #45: /root/miniconda3/bin/python() [0x51451c]
+frame #46: /root/miniconda3/bin/python() [0x5147b8]
+frame #47: /root/miniconda3/bin/python() [0x5148e8]
+frame #48: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #49: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #50: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #51: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #52: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #53: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #54: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+[W323 20:51:51.052417959 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde4f0c7c8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #29: /root/miniconda3/bin/python() [0x4d5860]
+frame #30: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #31: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #32: /root/miniconda3/bin/python() [0x48ece0]
+frame #33: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #34: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #41: /root/miniconda3/bin/python() [0x4d5860]
+frame #42: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #43: /root/miniconda3/bin/python() [0x4d5860]
+frame #44: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #45: /root/miniconda3/bin/python() [0x51451c]
+frame #46: /root/miniconda3/bin/python() [0x5147b8]
+frame #47: /root/miniconda3/bin/python() [0x5148e8]
+frame #48: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #49: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #50: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #51: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #52: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #53: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #54: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?25l[24;1H[?12l[?25h[?1049l[23;0;0t[?1l>[2026-03-23 20:51:51,631] [ais_bench] [[33mWARNING[0m] Can't set cursor because of endwin() returned ERR, running in background mode
+[2026-03-23 20:51:51,631] [ais_bench] [[32mINFO[0m] Launch TasksMonitor, PID: 328976, Refresh interval: 0.5, Run in background: True
+Monitoring tasks progress:   0%|          | 0/1 [00:00<?, ?it/s][2026-03-23 20:51:51,633] [ais_bench] [[33mWARNING[0m] Failed to read status file 'outputs/sharegpt_Qwen3-32B/1P2_2D2/20260323_205137/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json': [Errno 2] No such file or directory: 'outputs/sharegpt_Qwen3-32B/1P2_2D2/20260323_205137/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json'. Attempting to clear and continuing.
+Monitoring tasks progress: 100%|██████████| 1/1 [12:36<00:00, 756.92s/it]Monitoring tasks progress: 100%|██████████| 1/1 [12:36<00:00, 756.92s/it]
+[2026-03-23 21:04:31,267] [ais_bench] [[32mINFO[0m] Inference tasks completed.
+[2026-03-23 21:04:31,269] [ais_bench] [[32mINFO[0m] Summarizing performance results...
+[W323 21:04:31.381252406 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde4f0c7b8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: /root/miniconda3/bin/python() [0x5bd3d0]
+frame #29: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #30: /root/miniconda3/bin/python() [0x4d5860]
+frame #31: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #32: /root/miniconda3/bin/python() [0x4d5860]
+frame #33: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #34: /root/miniconda3/bin/python() [0x4d5860]
+frame #35: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #36: /root/miniconda3/bin/python() [0x4d5860]
+frame #37: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #38: /root/miniconda3/bin/python() [0x4d5860]
+frame #39: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #40: /root/miniconda3/bin/python() [0x4d5860]
+frame #41: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #42: /root/miniconda3/bin/python() [0x4d5860]
+frame #43: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #44: /root/miniconda3/bin/python() [0x51451c]
+frame #45: /root/miniconda3/bin/python() [0x5147b8]
+frame #46: /root/miniconda3/bin/python() [0x5148e8]
+frame #47: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #48: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #49: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #50: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #51: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #52: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #53: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+[W323 21:04:31.384024972 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde4f0c7c8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: /root/miniconda3/bin/python() [0x5bd3d0]
+frame #29: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #30: /root/miniconda3/bin/python() [0x4d5860]
+frame #31: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #32: /root/miniconda3/bin/python() [0x4d5860]
+frame #33: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #34: /root/miniconda3/bin/python() [0x4d5860]
+frame #35: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #36: /root/miniconda3/bin/python() [0x4d5860]
+frame #37: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #38: /root/miniconda3/bin/python() [0x4d5860]
+frame #39: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #40: /root/miniconda3/bin/python() [0x4d5860]
+frame #41: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #42: /root/miniconda3/bin/python() [0x4d5860]
+frame #43: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #44: /root/miniconda3/bin/python() [0x51451c]
+frame #45: /root/miniconda3/bin/python() [0x5147b8]
+frame #46: /root/miniconda3/bin/python() [0x5148e8]
+frame #47: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #48: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #49: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #50: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #51: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #52: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #53: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+[W323 21:04:31.416911273 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde4f0c7b8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #29: /root/miniconda3/bin/python() [0x4d5860]
+frame #30: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #31: /root/miniconda3/bin/python() [0x4d5860]
+frame #32: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #33: /root/miniconda3/bin/python() [0x4d5860]
+frame #34: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #41: /root/miniconda3/bin/python() [0x51451c]
+frame #42: /root/miniconda3/bin/python() [0x5147b8]
+frame #43: /root/miniconda3/bin/python() [0x5148e8]
+frame #44: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #45: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #46: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #47: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #48: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #49: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+[W323 21:04:31.422895049 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde4f0c7c8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #29: /root/miniconda3/bin/python() [0x4d5860]
+frame #30: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #31: /root/miniconda3/bin/python() [0x4d5860]
+frame #32: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #33: /root/miniconda3/bin/python() [0x4d5860]
+frame #34: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #41: /root/miniconda3/bin/python() [0x51451c]
+frame #42: /root/miniconda3/bin/python() [0x5147b8]
+frame #43: /root/miniconda3/bin/python() [0x5148e8]
+frame #44: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #45: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #46: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #47: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #48: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #49: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+[W323 21:04:32.438297427 ParallelCommon.cpp:44] Warning: Invalid OMP_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x18 (0xfffde4f0c7b8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #29: /root/miniconda3/bin/python() [0x4d5860]
+frame #30: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #31: /root/miniconda3/bin/python() [0x4d5860]
+frame #32: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #33: /root/miniconda3/bin/python() [0x4d5860]
+frame #34: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #41: /root/miniconda3/bin/python() [0x51451c]
+frame #42: /root/miniconda3/bin/python() [0x5147b8]
+frame #43: /root/miniconda3/bin/python() [0x5148e8]
+frame #44: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #45: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #46: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #47: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #48: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #49: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+[W323 21:04:32.441036852 ParallelCommon.cpp:44] Warning: Invalid MKL_NUM_THREADS variable value, Expected nthreads > 0 to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+Exception raised from get_env_num_threads at /pytorch/aten/src/ATen/ParallelCommon.cpp:38 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xb0 (0xfffde3f148c0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, char const*) + 0x6c (0xfffde3ebc1f0 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #2: <unknown function> + 0x137c72c (0xfffde4f0c72c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: at::intraop_default_num_threads() + 0x28 (0xfffde4f0c7c8 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: at::init_num_threads() + 0x24 (0xfffde4f0dc14 in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::get_num_threads() + 0x3c (0xfffde4f0dc5c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x8d952c (0xfffdee4f952c in /root/miniconda3/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: /root/miniconda3/bin/python() [0x5d6484]
+frame #8: /root/miniconda3/bin/python() [0x53f034]
+frame #9: /root/miniconda3/bin/python() [0x54b0e0]
+frame #10: /root/miniconda3/bin/python() [0x5d6484]
+frame #11: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #12: /root/miniconda3/bin/python() [0x4d5860]
+frame #13: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #14: /root/miniconda3/bin/python() [0x4d5860]
+frame #15: _PyObject_FastCallDictTstate + 0x68 (0x43e0bc in /root/miniconda3/bin/python)
+frame #16: _PyObject_Call_Prepend + 0x13c (0x43e410 in /root/miniconda3/bin/python)
+frame #17: /root/miniconda3/bin/python() [0x48ee7c]
+frame #18: /root/miniconda3/bin/python() [0x4871c0]
+frame #19: _PyObject_MakeTpCall + 0xa0 (0x43dee0 in /root/miniconda3/bin/python)
+frame #20: _PyEval_EvalFrameDefault + 0x8270 (0x42e330 in /root/miniconda3/bin/python)
+frame #21: /root/miniconda3/bin/python() [0x4d5860]
+frame #22: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #23: /root/miniconda3/bin/python() [0x4d5860]
+frame #24: _PyEval_EvalFrameDefault + 0x9058 (0x42f118 in /root/miniconda3/bin/python)
+frame #25: /root/miniconda3/bin/python() [0x4d5860]
+frame #26: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #27: /root/miniconda3/bin/python() [0x4d5860]
+frame #28: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #29: /root/miniconda3/bin/python() [0x4d5860]
+frame #30: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #31: /root/miniconda3/bin/python() [0x4d5860]
+frame #32: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #33: /root/miniconda3/bin/python() [0x4d5860]
+frame #34: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #35: /root/miniconda3/bin/python() [0x4d5860]
+frame #36: _PyEval_EvalFrameDefault + 0x6068 (0x42c128 in /root/miniconda3/bin/python)
+frame #37: /root/miniconda3/bin/python() [0x4d5860]
+frame #38: _PyEval_EvalFrameDefault + 0x5cd4 (0x42bd94 in /root/miniconda3/bin/python)
+frame #39: /root/miniconda3/bin/python() [0x4d5860]
+frame #40: PyEval_EvalCode + 0x90 (0x4d5a54 in /root/miniconda3/bin/python)
+frame #41: /root/miniconda3/bin/python() [0x51451c]
+frame #42: /root/miniconda3/bin/python() [0x5147b8]
+frame #43: /root/miniconda3/bin/python() [0x5148e8]
+frame #44: _PyRun_SimpleFileObject + 0x144 (0x516f04 in /root/miniconda3/bin/python)
+frame #45: _PyRun_AnyFileObject + 0x9c (0x5174e0 in /root/miniconda3/bin/python)
+frame #46: Py_RunMain + 0x478 (0x43124c in /root/miniconda3/bin/python)
+frame #47: Py_BytesMain + 0x64 (0x431be4 in /root/miniconda3/bin/python)
+frame #48: <unknown function> + 0x273fc (0xffff883873fc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #49: __libc_start_main + 0x98 (0xffff883874cc in /lib/aarch64-linux-gnu/libc.so.6)
+frame #50: /root/miniconda3/bin/python() [0x4304b0]
+ (function get_env_num_threads)
+Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1805 [00:00<?, ?it/s]Calculating performance details:  60%|██████    | 1090/1805 [00:00<00:00, 1201.52it/s]Calculating performance details:  83%|████████▎ | 1502/1805 [00:01<00:00, 1490.27it/s]Calculating performance details: 100%|██████████| 1805/1805 [00:01<00:00, 1628.45it/s]Calculating performance details: 100%|██████████| 1805/1805 [00:01<00:00, 1493.22it/s]Calculating performance details: 100%|██████████| 1805/1805 [00:01<00:00, 1492.63it/s]
+[2026-03-23 21:04:33,534] [ais_bench] [[32mINFO[0m] Visualization in multi-turn conversations...
+[2026-03-23 21:04:33,848] [ais_bench] [[32mINFO[0m] Request timeline and concurrency chart saved to outputs/sharegpt_Qwen3-32B/1P2_2D2/20260323_205137/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
+[2026-03-23 21:04:33,848] [ais_bench] [[32mINFO[0m] The sharegpt_plot has been saved in outputs/sharegpt_Qwen3-32B/1P2_2D2/20260323_205137/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
+[2026-03-23 21:04:33,853] [ais_bench] [[32mINFO[0m] Converting performance results for stage...
+[2026-03-23 21:04:33,855] [ais_bench] [[32mINFO[0m] Performance results conversion completed!
+[2026-03-23 21:04:33,855] [ais_bench] [[32mINFO[0m] Starting metrics calculation...
+[2026-03-23 21:04:33,894] [ais_bench] [[32mINFO[0m] Starting common metrics calculation...
+[2026-03-23 21:04:33,895] [ais_bench] [[33mWARNING[0m] Some requests failed, please check the error logs from responses!
+[2026-03-23 21:04:33,895] [ais_bench] [[32mINFO[0m] Adding units to metrics...
+[2026-03-23 21:04:33,895] [ais_bench] [[32mINFO[0m] Performance data calculation completed!
+[2026-03-23 21:04:33,896] [ais_bench] [[32mINFO[0m] Performance Results of task [vllm-multiturn-api-chat-stream/sharegpt]: 
+╒══════════════════════════╤═════════╤════════════════╤════════════════╤════════════════╤══════════════╤════════════════╤════════════════╤════════════════╤═════╕
+│ Performance Parameters   │ Stage   │ Average        │ Min            │ Max            │ Median       │ P75            │ P90            │ P99            │  N  │
+╞══════════════════════════╪═════════╪════════════════╪════════════════╪════════════════╪══════════════╪════════════════╪════════════════╪════════════════╪═════╡
+│ E2EL                     │ total   │ 315194.9 ms    │ 35544.7 ms     │ 557255.1 ms    │ 482824.3 ms  │ 548535.4 ms    │ 554110.8 ms    │ 554948.9 ms    │ 735 │
+├──────────────────────────┼─────────┼────────────────┼────────────────┼────────────────┼──────────────┼────────────────┼────────────────┼────────────────┼─────┤
+│ TTFT                     │ total   │ 240421.8 ms    │ 493.3 ms       │ 476346.8 ms    │ 401705.5 ms  │ 467513.8 ms    │ 472980.9 ms    │ 475775.3 ms    │ 735 │
+├──────────────────────────┼─────────┼────────────────┼────────────────┼────────────────┼──────────────┼────────────────┼────────────────┼────────────────┼─────┤
+│ TPOT                     │ total   │ 149.2 ms       │ 128.3 ms       │ 213.0 ms       │ 153.3 ms     │ 159.5 ms       │ 160.1 ms       │ 189.6 ms       │ 735 │
+├──────────────────────────┼─────────┼────────────────┼────────────────┼────────────────┼──────────────┼────────────────┼────────────────┼────────────────┼─────┤
+│ ITL                      │ total   │ 148.6 ms       │ 0.0 ms         │ 25946.4 ms     │ 141.1 ms     │ 148.6 ms       │ 159.9 ms       │ 446.8 ms       │ 735 │
+├──────────────────────────┼─────────┼────────────────┼────────────────┼────────────────┼──────────────┼────────────────┼────────────────┼────────────────┼─────┤
+│ InputTokens              │ total   │ 484.4762       │ 9.0            │ 3049.0         │ 298.0        │ 724.5          │ 1193.4         │ 2043.62        │ 735 │
+├──────────────────────────┼─────────┼────────────────┼────────────────┼────────────────┼──────────────┼────────────────┼────────────────┼────────────────┼─────┤
+│ OutputTokens             │ total   │ 502.1184       │ 73.0           │ 512.0          │ 512.0        │ 512.0          │ 512.0          │ 512.0          │ 735 │
+├──────────────────────────┼─────────┼────────────────┼────────────────┼────────────────┼──────────────┼────────────────┼────────────────┼────────────────┼─────┤
+│ OutputTokenThroughput    │ total   │ 3.4953 token/s │ 0.1526 token/s │ 7.7261 token/s │ 1.06 token/s │ 6.2756 token/s │ 7.0365 token/s │ 7.6941 token/s │ 735 │
+╘══════════════════════════╧═════════╧════════════════╧════════════════╧════════════════╧══════════════╧════════════════╧════════════════╧════════════════╧═════╛
+[2026-03-23 21:04:33,905] [ais_bench] [[32mINFO[0m] Performance Result files located in outputs/sharegpt_Qwen3-32B/1P2_2D2/20260323_205137/performances/vllm-multiturn-api-chat-stream.
+╒══════════════════════════╤═════════╤══════════════════╕
+│ Common Metric            │ Stage   │ Value            │
+╞══════════════════════════╪═════════╪══════════════════╡
+│ Benchmark Duration       │ total   │ 733016.5522 ms   │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Total Requests           │ total   │ 1805             │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Failed Requests          │ total   │ 1070             │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Success Requests         │ total   │ 735              │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Concurrency              │ total   │ 316.0478         │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Max Concurrency          │ total   │ 500              │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Request Throughput       │ total   │ 1.0027 req/s     │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Total Input Tokens       │ total   │ 356090           │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Prefill Token Throughput │ total   │ 2.0151 token/s   │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Total Generated Tokens   │ total   │ 369057           │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Input Token Throughput   │ total   │ 485.7871 token/s │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Output Token Throughput  │ total   │ 503.477 token/s  │
+├──────────────────────────┼─────────┼──────────────────┤
+│ Total Token Throughput   │ total   │ 989.2642 token/s │
+╘══════════════════════════╧═════════╧══════════════════╛
