@@ -1,0 +1,71 @@
+[2026-03-24 17:43:41,733] [ais_bench] [[32mINFO[0m] Loading vllm_api_stream_chat_multiturn: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./models/vllm_api/vllm_api_stream_chat_multiturn.py
+[2026-03-24 17:43:41,740] [ais_bench] [[32mINFO[0m] Loading sharegpt_gen: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./datasets/sharegpt/sharegpt_gen.py
+[2026-03-24 17:43:41,744] [ais_bench] [[32mINFO[0m] Loading example: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./summarizers/example.py
+[2026-03-24 17:43:41,799] [ais_bench] [[32mINFO[0m] Current exp folder: outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_174327
+[2026-03-24 17:43:41,814] [ais_bench] [[32mINFO[0m] Starting inference tasks...
+[2026-03-24 17:43:41,815] [ais_bench] [[32mINFO[0m] Partitioned into 1 tasks.
+[2026-03-24 17:43:41,815] [ais_bench] [[32mINFO[0m] Merging datasets with the same model and inferencer...
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?25l[24;1H[?12l[?25h[?1049l[23;0;0t[?1l>[2026-03-24 17:43:41,856] [ais_bench] [[33mWARNING[0m] Can't set cursor because of endwin() returned ERR, running in background mode
+[2026-03-24 17:43:41,857] [ais_bench] [[32mINFO[0m] Launch TasksMonitor, PID: 917389, Refresh interval: 0.5, Run in background: True
+Monitoring tasks progress:   0%|          | 0/1 [00:00<?, ?it/s][2026-03-24 17:43:41,859] [ais_bench] [[33mWARNING[0m] Failed to read status file 'outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_174327/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json': [Errno 2] No such file or directory: 'outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_174327/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json'. Attempting to clear and continuing.
+Monitoring tasks progress: 100%|██████████| 1/1 [05:59<00:00, 359.48s/it]Monitoring tasks progress: 100%|██████████| 1/1 [05:59<00:00, 359.48s/it]
+[2026-03-24 17:49:44,126] [ais_bench] [[32mINFO[0m] Inference tasks completed.
+[2026-03-24 17:49:44,130] [ais_bench] [[32mINFO[0m] Summarizing performance results...
+Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 0/12884 [00:01<?, ?it/s]Calculating performance details:   0%|          | 22/12884 [00:02<19:36, 10.93it/s]Calculating performance details:   3%|▎         | 441/12884 [00:02<00:59, 208.63it/s]Calculating performance details:   7%|▋         | 873/12884 [00:02<00:30, 394.24it/s]Calculating performance details:  10%|█         | 1297/12884 [00:02<00:20, 560.28it/s]Calculating performance details:  13%|█▎        | 1725/12884 [00:02<00:15, 714.11it/s]Calculating performance details:  17%|█▋        | 2126/12884 [00:02<00:12, 844.91it/s]Calculating performance details:  20%|█▉        | 2547/12884 [00:02<00:10, 973.28it/s]Calculating performance details:  23%|██▎       | 2967/12884 [00:02<00:09, 1091.82it/s]Calculating performance details:  26%|██▋       | 3384/12884 [00:02<00:07, 1200.80it/s]Calculating performance details:  30%|██▉       | 3808/12884 [00:02<00:06, 1304.69it/s]Calculating performance details:  33%|███▎      | 4231/12884 [00:03<00:06, 1401.33it/s]Calculating performance details:  36%|███▌      | 4659/12884 [00:03<00:05, 1493.37it/s]Calculating performance details:  39%|███▉      | 5083/12884 [00:03<00:04, 1578.40it/s]Calculating performance details:  43%|████▎     | 5486/12884 [00:03<00:04, 1651.97it/s]Calculating performance details:  46%|████▌     | 5899/12884 [00:03<00:04, 1724.13it/s]Calculating performance details:  49%|████▉     | 6311/12884 [00:03<00:03, 1791.87it/s]Calculating performance details:  52%|█████▏    | 6723/12884 [00:03<00:03, 1855.83it/s]Calculating performance details:  55%|█████▌    | 7134/12884 [00:03<00:03, 1916.06it/s]Calculating performance details:  59%|█████▊    | 7547/12884 [00:03<00:02, 1973.61it/s]Calculating performance details:  62%|██████▏   | 7963/12884 [00:03<00:02, 2028.96it/s]Calculating performance details:  65%|██████▌   | 8378/12884 [00:04<00:02, 2081.36it/s]Calculating performance details:  68%|██████▊   | 8770/12884 [00:04<00:01, 2125.61it/s]Calculating performance details:  71%|███████   | 9177/12884 [00:04<00:01, 2171.29it/s]Calculating performance details:  74%|███████▍  | 9582/12884 [00:04<00:01, 2214.39it/s]Calculating performance details:  78%|███████▊  | 9988/12884 [00:04<00:01, 2255.78it/s]Calculating performance details:  81%|████████  | 10397/12884 [00:04<00:01, 2295.97it/s]Calculating performance details:  84%|████████▍ | 10806/12884 [00:04<00:00, 2334.44it/s]Calculating performance details:  87%|████████▋ | 11210/12884 [00:04<00:00, 2370.23it/s]Calculating performance details:  90%|█████████ | 11613/12884 [00:04<00:00, 2404.29it/s]Calculating performance details:  93%|█████████▎| 12007/12884 [00:04<00:00, 2435.10it/s]Calculating performance details:  96%|█████████▋| 12401/12884 [00:05<00:00, 2464.71it/s]Calculating performance details:  99%|█████████▉| 12791/12884 [00:05<00:00, 2492.33it/s]Calculating performance details: 100%|██████████| 12884/12884 [00:05<00:00, 2462.14it/s]Calculating performance details: 100%|██████████| 12884/12884 [00:05<00:00, 2415.76it/s]Calculating performance details: 100%|██████████| 12884/12884 [00:05<00:00, 2415.55it/s]
+[2026-03-24 17:49:52,990] [ais_bench] [[32mINFO[0m] Visualization in multi-turn conversations...
+[2026-03-24 17:49:54,190] [ais_bench] [[32mINFO[0m] Request timeline and concurrency chart saved to outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_174327/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
+[2026-03-24 17:49:54,191] [ais_bench] [[32mINFO[0m] The sharegpt_plot has been saved in outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_174327/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
+[2026-03-24 17:49:54,217] [ais_bench] [[32mINFO[0m] Converting performance results for stage...
+[2026-03-24 17:49:54,250] [ais_bench] [[32mINFO[0m] Performance results conversion completed!
+[2026-03-24 17:49:54,251] [ais_bench] [[32mINFO[0m] Starting metrics calculation...
+[2026-03-24 17:49:54,387] [ais_bench] [[32mINFO[0m] Starting common metrics calculation...
+[2026-03-24 17:49:54,392] [ais_bench] [[32mINFO[0m] Adding units to metrics...
+[2026-03-24 17:49:54,392] [ais_bench] [[32mINFO[0m] Performance data calculation completed!
+[2026-03-24 17:49:54,394] [ais_bench] [[32mINFO[0m] Performance Results of task [vllm-multiturn-api-chat-stream/sharegpt]: 
+╒══════════════════════════╤═════════╤═══════════════╤════════════════╤════════════════╤════════════════╤════════════════╤════════════════╤════════════════╤═══════╕
+│ Performance Parameters   │ Stage   │ Average       │ Min            │ Max            │ Median         │ P75            │ P90            │ P99            │   N   │
+╞══════════════════════════╪═════════╪═══════════════╪════════════════╪════════════════╪════════════════╪════════════════╪════════════════╪════════════════╪═══════╡
+│ E2EL                     │ total   │ 7026.0 ms     │ 443.0 ms       │ 22052.5 ms     │ 6823.0 ms      │ 8743.8 ms      │ 11184.0 ms     │ 14142.5 ms     │ 12884 │
+├──────────────────────────┼─────────┼───────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼───────┤
+│ TTFT                     │ total   │ 6745.6 ms     │ 224.7 ms       │ 21777.7 ms     │ 6525.5 ms      │ 8466.5 ms      │ 10912.3 ms     │ 13808.4 ms     │ 12884 │
+├──────────────────────────┼─────────┼───────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼───────┤
+│ TPOT                     │ total   │ 70.1 ms       │ 0.0 ms         │ 305.3 ms       │ 65.7 ms        │ 74.4 ms        │ 93.3 ms        │ 181.5 ms       │ 12884 │
+├──────────────────────────┼─────────┼───────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼───────┤
+│ ITL                      │ total   │ 46.7 ms       │ 0.0 ms         │ 864.3 ms       │ 52.3 ms        │ 69.4 ms        │ 85.8 ms        │ 307.4 ms       │ 12884 │
+├──────────────────────────┼─────────┼───────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼───────┤
+│ InputTokens              │ total   │ 327.0587      │ 9.0            │ 2038.0         │ 258.0          │ 428.0          │ 666.0          │ 1400.0         │ 12884 │
+├──────────────────────────┼─────────┼───────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼───────┤
+│ OutputTokens             │ total   │ 5.0           │ 5.0            │ 5.0            │ 5.0            │ 5.0            │ 5.0            │ 5.0            │ 12884 │
+├──────────────────────────┼─────────┼───────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼───────┤
+│ OutputTokenThroughput    │ total   │ 1.011 token/s │ 0.2267 token/s │ 11.286 token/s │ 0.7328 token/s │ 0.9196 token/s │ 1.6638 token/s │ 6.9564 token/s │ 12884 │
+╘══════════════════════════╧═════════╧═══════════════╧════════════════╧════════════════╧════════════════╧════════════════╧════════════════╧════════════════╧═══════╛
+[2026-03-24 17:49:54,408] [ais_bench] [[32mINFO[0m] Performance Result files located in outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_174327/performances/vllm-multiturn-api-chat-stream.
+╒══════════════════════════╤═════════╤════════════════════╕
+│ Common Metric            │ Stage   │ Value              │
+╞══════════════════════════╪═════════╪════════════════════╡
+│ Benchmark Duration       │ total   │ 328729.3322 ms     │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Total Requests           │ total   │ 12884              │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Failed Requests          │ total   │ 0                  │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Success Requests         │ total   │ 12884              │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Concurrency              │ total   │ 275.3716           │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Max Concurrency          │ total   │ 300                │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Request Throughput       │ total   │ 39.1933 req/s      │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Total Input Tokens       │ total   │ 4213824            │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Prefill Token Throughput │ total   │ 48.4849 token/s    │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Total Generated Tokens   │ total   │ 64420              │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Input Token Throughput   │ total   │ 12818.5215 token/s │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Output Token Throughput  │ total   │ 195.9667 token/s   │
+├──────────────────────────┼─────────┼────────────────────┤
+│ Total Token Throughput   │ total   │ 13014.4882 token/s │
+╘══════════════════════════╧═════════╧════════════════════╛
