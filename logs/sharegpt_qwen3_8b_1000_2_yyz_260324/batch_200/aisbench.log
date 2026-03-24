@@ -1,70 +1,0 @@
-[2026-03-24 15:11:00,345] [ais_bench] [[32mINFO[0m] Loading vllm_api_stream_chat_multiturn: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./models/vllm_api/vllm_api_stream_chat_multiturn.py
-[2026-03-24 15:11:00,354] [ais_bench] [[32mINFO[0m] Loading sharegpt_gen: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./datasets/sharegpt/sharegpt_gen.py
-[2026-03-24 15:11:00,357] [ais_bench] [[32mINFO[0m] Loading example: /root/autodl-tmp/code/benchmark/ais_bench/benchmark/configs/./summarizers/example.py
-[2026-03-24 15:11:00,413] [ais_bench] [[32mINFO[0m] Current exp folder: outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_151045
-[2026-03-24 15:11:00,428] [ais_bench] [[32mINFO[0m] Starting inference tasks...
-[2026-03-24 15:11:00,429] [ais_bench] [[32mINFO[0m] Partitioned into 1 tasks.
-[2026-03-24 15:11:00,429] [ais_bench] [[32mINFO[0m] Merging datasets with the same model and inferencer...
-[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?25l[24;1H[?12l[?25h[?1049l[23;0;0t[?1l>[2026-03-24 15:11:00,463] [ais_bench] [[33mWARNING[0m] Can't set cursor because of endwin() returned ERR, running in background mode
-[2026-03-24 15:11:00,463] [ais_bench] [[32mINFO[0m] Launch TasksMonitor, PID: 641759, Refresh interval: 0.5, Run in background: True
-Monitoring tasks progress:   0%|          | 0/1 [00:00<?, ?it/s][2026-03-24 15:11:00,465] [ais_bench] [[33mWARNING[0m] Failed to read status file 'outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_151045/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json': [Errno 2] No such file or directory: 'outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_151045/status_tmp/tmp_vllm-multiturn-api-chat-stream_sharegpt.json'. Attempting to clear and continuing.
-Monitoring tasks progress: 100%|██████████| 1/1 [03:31<00:00, 211.54s/it]Monitoring tasks progress: 100%|██████████| 1/1 [03:31<00:00, 211.54s/it]
-[2026-03-24 15:14:34,575] [ais_bench] [[32mINFO[0m] Inference tasks completed.
-[2026-03-24 15:14:34,577] [ais_bench] [[32mINFO[0m] Summarizing performance results...
-Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   0%|          | 0/1000 [00:00<?, ?it/s]Calculating performance details:   1%|          | 7/1000 [00:00<01:40,  9.92it/s]Calculating performance details:  35%|███▌      | 353/1000 [00:00<00:01, 437.80it/s]Calculating performance details:  73%|███████▎  | 732/1000 [00:00<00:00, 807.10it/s]Calculating performance details: 100%|██████████| 1000/1000 [00:01<00:00, 992.57it/s]Calculating performance details: 100%|██████████| 1000/1000 [00:01<00:00, 902.65it/s]Calculating performance details: 100%|██████████| 1000/1000 [00:01<00:00, 902.33it/s]
-[2026-03-24 15:14:37,017] [ais_bench] [[32mINFO[0m] Request timeline and concurrency chart saved to outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_151045/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
-[2026-03-24 15:14:37,017] [ais_bench] [[32mINFO[0m] The sharegpt_plot has been saved in outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_151045/performances/vllm-multiturn-api-chat-stream/sharegpt_plot.html
-[2026-03-24 15:14:37,022] [ais_bench] [[32mINFO[0m] Converting performance results for stage...
-[2026-03-24 15:14:37,024] [ais_bench] [[32mINFO[0m] Performance results conversion completed!
-[2026-03-24 15:14:37,025] [ais_bench] [[32mINFO[0m] Starting metrics calculation...
-[2026-03-24 15:14:37,078] [ais_bench] [[32mINFO[0m] Starting common metrics calculation...
-[2026-03-24 15:14:37,079] [ais_bench] [[32mINFO[0m] Adding units to metrics...
-[2026-03-24 15:14:37,079] [ais_bench] [[32mINFO[0m] Performance data calculation completed!
-[2026-03-24 15:14:37,080] [ais_bench] [[32mINFO[0m] Performance Results of task [vllm-multiturn-api-chat-stream/sharegpt]: 
-╒══════════════════════════╤═════════╤═════════════════╤════════════════╤═════════════════╤═════════════════╤═════════════════╤═════════════════╤═════════════════╤══════╕
-│ Performance Parameters   │ Stage   │ Average         │ Min            │ Max             │ Median          │ P75             │ P90             │ P99             │  N   │
-╞══════════════════════════╪═════════╪═════════════════╪════════════════╪═════════════════╪═════════════════╪═════════════════╪═════════════════╪═════════════════╪══════╡
-│ E2EL                     │ total   │ 35707.4 ms      │ 5190.2 ms      │ 43935.8 ms      │ 36180.7 ms      │ 37246.2 ms      │ 41375.2 ms      │ 42249.6 ms      │ 1000 │
-├──────────────────────────┼─────────┼─────────────────┼────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────┤
-│ TTFT                     │ total   │ 2079.5 ms       │ 228.6 ms       │ 9553.3 ms       │ 706.8 ms        │ 4313.2 ms       │ 6752.4 ms       │ 7454.6 ms       │ 1000 │
-├──────────────────────────┼─────────┼─────────────────┼────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────┤
-│ TPOT                     │ total   │ 68.3 ms         │ 63.5 ms        │ 74.8 ms         │ 68.2 ms         │ 69.6 ms         │ 70.1 ms         │ 70.3 ms         │ 1000 │
-├──────────────────────────┼─────────┼─────────────────┼────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────┤
-│ ITL                      │ total   │ 68.1 ms         │ 0.0 ms         │ 786.9 ms        │ 66.7 ms         │ 69.5 ms         │ 73.9 ms         │ 126.0 ms        │ 1000 │
-├──────────────────────────┼─────────┼─────────────────┼────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────┤
-│ InputTokens              │ total   │ 546.596         │ 9.0            │ 26284.0         │ 50.0            │ 409.25          │ 1791.3          │ 5083.53         │ 1000 │
-├──────────────────────────┼─────────┼─────────────────┼────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────┤
-│ OutputTokens             │ total   │ 493.137         │ 71.0           │ 512.0           │ 512.0           │ 512.0           │ 512.0           │ 512.0           │ 1000 │
-├──────────────────────────┼─────────┼─────────────────┼────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼──────┤
-│ OutputTokenThroughput    │ total   │ 13.8268 token/s │ 5.7813 token/s │ 15.2356 token/s │ 14.1094 token/s │ 14.3172 token/s │ 14.8527 token/s │ 15.1695 token/s │ 1000 │
-╘══════════════════════════╧═════════╧═════════════════╧════════════════╧═════════════════╧═════════════════╧═════════════════╧═════════════════╧═════════════════╧══════╛
-[2026-03-24 15:14:37,089] [ais_bench] [[32mINFO[0m] Performance Result files located in outputs/sharegpt_Qwen3-8B/1P1_2D1/20260324_151045/performances/vllm-multiturn-api-chat-stream.
-╒══════════════════════════╤═════════╤═══════════════════╕
-│ Common Metric            │ Stage   │ Value             │
-╞══════════════════════════╪═════════╪═══════════════════╡
-│ Benchmark Duration       │ total   │ 189450.2473 ms    │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Total Requests           │ total   │ 1000              │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Failed Requests          │ total   │ 0                 │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Success Requests         │ total   │ 1000              │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Concurrency              │ total   │ 188.4792          │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Max Concurrency          │ total   │ 200               │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Request Throughput       │ total   │ 5.2784 req/s      │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Total Input Tokens       │ total   │ 546596            │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Prefill Token Throughput │ total   │ 262.8538 token/s  │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Total Generated Tokens   │ total   │ 493137            │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Input Token Throughput   │ total   │ 2885.1691 token/s │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Output Token Throughput  │ total   │ 2602.9895 token/s │
-├──────────────────────────┼─────────┼───────────────────┤
-│ Total Token Throughput   │ total   │ 5488.1586 token/s │
-╘══════════════════════════╧═════════╧═══════════════════╛
